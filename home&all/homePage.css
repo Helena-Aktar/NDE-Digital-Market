@@ -123,8 +123,10 @@ body {
 
 /* ---------- nav bottom --------- */
 .navBar .nav_bottom {
-  height: 180px;
-  background: url(./images/medic_cover\ Page.jpg);
+  /* margin-top: 20px; */
+  /* height: 100%;
+  width: 100%; */
+  background: url(./images/a.jpg);
 
   /* background: url(./images/copy-wp9024378.jpg); */
 
