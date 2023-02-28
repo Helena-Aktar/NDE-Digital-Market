@@ -124,9 +124,10 @@ body {
 /* ---------- nav bottom --------- */
 .navBar .nav_bottom {
   height: 180px;
-  background: url(./images/wp9024378.jpg);
+  background: url(./images/medic_cover\ Page.jpg);
+
   /* background: url(./images/copy-wp9024378.jpg); */
-  background-size: 300px 150px;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -100px;
@@ -363,12 +364,8 @@ body {
   background-color: var(--color-primary);
 }
 
-/* consumer popup */
-.consumer-popup {
-  /* display: none; */
-}
-
-.consumer-popup {
+/* Bone popup */
+.bone-popup {
   position: absolute;
   z-index: 8;
   left: 310px;
@@ -377,10 +374,14 @@ body {
   /* popup hidden */
   display: none;
 }
-#consumerParrent:hover .consumer-popup {
+#boneParrent:hover .bone-popup {
   display: block;
 }
 
+.bone-popup a {
+  text-decoration: none;
+  color: black;
+}
 /* ===================== ads ==================*/
 .ad-header_text {
   /* display: none; */
