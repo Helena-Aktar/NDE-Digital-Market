@@ -124,8 +124,9 @@ body {
 /* ---------- nav bottom --------- */
 .navBar .nav_bottom {
   /* margin-top: 20px; */
+  /* width: 100%; */
   height: 180px;
-  background: url(./images/madic-2.svg);
+  background-image: url(./images/coverPhoto4.jpg);
   /* background: url(./images/copy-wp9024378.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,6 +140,10 @@ body {
 .nav_bottom-header-item {
   color: white;
   text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 3px 2px 3px rgb(0, 0, 0), 0 0 1em rgb(59, 74, 77),
+    0 0 0.2em rgb(29, 82, 92);
 }
 .nav_bottom-header-item.active {
   font-weight: bolder;
