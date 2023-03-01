@@ -78,7 +78,7 @@ body {
 .profile-popup {
   position: absolute;
   z-index: 10;
-  top: 60px;
+  top: 50px;
 
   box-shadow: 0 0 1rem var(--color-primary);
   /* popup hidden */
@@ -124,12 +124,9 @@ body {
 /* ---------- nav bottom --------- */
 .navBar .nav_bottom {
   /* margin-top: 20px; */
-  /* height: 100%;
-  width: 100%; */
-  background: url(./images/a.jpg);
-
+  height: 180px;
+  background: url(./images/dreamstime_xxl_113652723.jpg);
   /* background: url(./images/copy-wp9024378.jpg); */
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -100px;
@@ -370,11 +367,22 @@ body {
 .bone-popup {
   position: absolute;
   z-index: 8;
-  left: 310px;
-  top: 22px;
+  left: 315px;
+  top: 30px;
   box-shadow: 0 0 1rem var(--color-primary);
   /* popup hidden */
   display: none;
+}
+.bone-popup::before {
+  content: "";
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: 35px;
+  transform: rotate(45deg);
 }
 #boneParrent:hover .bone-popup {
   display: block;
