@@ -57,59 +57,53 @@ const result = document.querySelector(".res");
 //  result.style.display = "none";
 console.log(image);
 // console.log(result);
-const containerRect = container.getBoundingClientRect();
-const imageRect = image.getBoundingClientRect();
-const lensRect = lens.getBoundingClientRect();
-const resultRect = result.getBoundingClientRect();
+const containerRact = container.getBoundingClientRect();
+const imageRact = image.getBoundingClientRect();
+const lensRact = lens.getBoundingClientRect();
+const resultRact = result.getBoundingClientRect();
 // result.style.display = "none";
-
 container.addEventListener("mousemove", zoomImage);
-container.addEventListener("mouseout", function(){
-    result.style.display = "none";
-});
-
-// console.log(z);
-
+// result.style.display = "none";
 function zoomImage(e) {
-    // console.log("zoom image", e.clientX, e.clientY)
-    result.style.display = "block";
-    const { x, y } = getMousePos(e);
-
-    lens.style.left = x + "px";
-    lens.style.top = y + "px";
-
-    let fx = resultRect.width / lensRect.width;
-    let fy = resultRect.height / lensRect.height;
-
-    result.style.backgroundSize = `${imageRect.width * fx}px ${
-        imageRect.height * fy
-    }px`;
-    result.style.backgroundPosition = `-${x * fx}px -${y * fy}px`;
-    result.style.backgroundImage = `url(${image.src})`;
+  result.style.display = "block";
+  console.log(result.style.display);
+  const { x, y } = getMousepositon(e);
+  console.log("zoom image", e.clientX, e.clientY);
+  lens.style.left = x + "px";
+  lens.style.top = y + "px";
+  let fx = resultRact.width / lensRact.width;
+  let fy = resultRact.height / lensRact.height;
+  result.style.backgroundSize = `${imageRact.width * fx}px ${
+    imageRact.height * fy
+  }px`;
+  result.style.backgroundPosition = `-${x * fx}px -${y * fy}px`;
+  result.style.backgroundImage = `url(${image.src})`;
+  // result.style.display = "none";
 }
-
-function getMousePos(e) {
-    let x = e.clientX - containerRect.left - lensRect.width / 2;
-    let y = e.clientY - containerRect.top - lensRect.height / 2;
-
-    let minX = 0;
-    let minY = 0;
-    let maxX = containerRect.width - lensRect.width;
-    let maxY = containerRect.height - lensRect.height;
-
-    if (x <= minX) {
-        x = minX;
-    } else if (x >= maxX) {
-        x = maxX;
-    }
-    if (y <= minY) {
-        y = minY;
-    } else if (y >= maxY) {
-        y = maxY;
-    }
-
-    return { x, y };
+function getMousepositon(e) {
+  let x = e.clientX - containerRact.left - lensRact.width / 2;
+  let y = e.clientY - containerRact.top - lensRact.width / 2;
+  let minX = 0;
+  let minY = 0;
+  let maxX = imageRact.width - lensRact.width;
+  let maxY = imageRact.height - lensRact.height;
+  if (x <= minX) {
+    x = minX;
+  } else if (x >= maxX) {
+    x = maxX;
+  }
+  if (y <= minY) {
+    y = minY;
+  } else if (y >= maxY) {
+    y = maxY;
+  }
+  return { x, y };
 }
+container.addEventListener("mouseout", (event) => {});
+onmouseout = (event) => {
+  console.log(" mouse out");
+  result.style.display = "none";
+};
 // container.addEventListener("mouseout",function(event){
 //     result.style.display="none";
 // })
