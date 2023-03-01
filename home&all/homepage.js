@@ -107,6 +107,7 @@ function searchscrollFunction() {
     fullmySearchBar.style.width = "850px";
     navTop.style.position = "relative";
     // navTop.style.transition = "all 10s ease";
+    // navTop.style.backgroundImage = "url('./images/madic-2.svg')";
   }
 }
 
