@@ -11,17 +11,20 @@ window.addEventListener('DOMContentLoaded',function(){
 })
 const password = document.getElementById("login_password");
 // var value;
-password.addEventListener("input", value());
+password.addEventListener("input", function(){
+    const passwordvalue = password.value;
+    console.log(passwordvalue);
+});
 //   console.log(value); // display the real-time value in the console
 
-function value()
-{
-    // const password = document.getElementById("login_password");
-    const passwordvalue = inputField.value;
-    console.log(passwordvalue);
-    // const email = document.getElementById("email");
+// function value()
+// {
+//     // const password = document.getElementById("login_password");
+//     // const passwordvalue = password.value;
+//     // console.log(passwordvalue);
+//     // const email = document.getElementById("email");
 
-}
+// }
 
 
 
