@@ -8,12 +8,13 @@ html {
   /* overflow-x: hidden; */
   scroll-padding-top: 5.5rem;
   scroll-behavior: smooth;
+  background-color: blueviolet !important;
 }
-/* body{
-    /* background-color: rgb(102, 102, 197); */
+body{
+    background-color: rgb(102, 102, 197) !important;
 /* background-image: url("/img/body1.jpg");
 
-}  */
+} 
 a {
   text-decoration: none !important;
   /* color: black !important; */
@@ -89,19 +90,20 @@ a {
 }
 
 .res {
-  display: none;
+  /* display: none; */
   position: absolute;
   left: calc(100% + 30px);
-  top: -60px;
-  width: 1080px;
-  height: 640px;
+  top: -57px;
+  width: 900px;
+  height: 600px;
+  border: 2px solid #1e2234;
   /* background-color: #1e2234; */
   background-repeat: no-repeat;
-  background-image: url("/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless-Steel-Bone-Marrow-Aspiration-Biopsy-puncture-Needle-2.png");
+  /* background-image: url("/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless-Steel-Bone-Marrow-Aspiration-Biopsy-puncture-Needle-2.png"); */
 }
-#zoom:hover .res{
+/* #zoom:hover .res{
   display: block;
-}
+} */
 
 
 /* zoom End */

@@ -1,3 +1,5 @@
+
+
 function show(imgID) {
   // console.log(imgID);
   var a = document.querySelector("#print");
@@ -20,10 +22,10 @@ function off() {
 
 function change(a) {
   const arr = [
-    "/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless-Steel-Bone-Marrow-Aspiration-Biopsy-puncture-Needle(2).png",
-    "/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless Steel Bone Marrow Aspiration Biopsy puncture Needle(0).png",
-    "/Medical Equipment Image/Bone & Bone Marrow Biopsy/Bone Marrow Aspiration Needle/Stainless Steel Bone Marrow Aspiration Biopsy puncture Needle(1).png",
-    "/Medical Equipment Image/Bone & Bone Marrow Biopsy/Bone Marrow Aspiration Needle/Stainless Steel Bone Marrow Aspiration Biopsy puncture Needle(3).png",
+    "/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless-Steel-Bone-Marrow-Aspiration-Biopsy-puncture-Needle-2.png",
+    "/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless-Steel-Bone-Marrow-Aspiration-Biopsy-puncture-Needle-0.png",
+    "/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless-Steel-Bone-Marrow-Aspiration-Biopsy-puncture-Needle-1.png",
+    "/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless-Steel-Bone-Marrow-Aspiration-Biopsy-puncture-Needle-3.png",
   ];
   console.log(a);
   console.log(arr[a]);
@@ -52,21 +54,26 @@ const container = document.querySelector("#zoom");
 const image = document.querySelector("#root_img");
 const lens = document.querySelector(".lens");
 const result = document.querySelector(".res");
-// console.log(image);
+//  result.style.display = "none";
+console.log(image);
 // console.log(result);
 const containerRect = container.getBoundingClientRect();
 const imageRect = image.getBoundingClientRect();
 const lensRect = lens.getBoundingClientRect();
 const resultRect = result.getBoundingClientRect();
+// result.style.display = "none";
 
 container.addEventListener("mousemove", zoomImage);
+container.addEventListener("mouseout", function(){
+    result.style.display = "none";
+});
 
-// var z = result.style.backgroundImage = `url(${image.src})`;
 // console.log(z);
 
 function zoomImage(e) {
     // console.log("zoom image", e.clientX, e.clientY)
-    const { x, y } = getMousePos(e)
+    result.style.display = "block";
+    const { x, y } = getMousePos(e);
 
     lens.style.left = x + "px";
     lens.style.top = y + "px";
@@ -76,8 +83,9 @@ function zoomImage(e) {
 
     result.style.backgroundSize = `${imageRect.width * fx}px ${
         imageRect.height * fy
-    }px`
-    result.style.backgroundPosition = `-${x * fx}px -${y * fy}px`
+    }px`;
+    result.style.backgroundPosition = `-${x * fx}px -${y * fy}px`;
+    result.style.backgroundImage = `url(${image.src})`;
 }
 
 function getMousePos(e) {
@@ -102,60 +110,9 @@ function getMousePos(e) {
 
     return { x, y };
 }
+// container.addEventListener("mouseout",function(event){
+//     result.style.display="none";
+// })
 
-function imageZoom(imgID, resultID) {
-  var img, lens, result, cx, cy;
-  img = document.getElementById(imgID);
-  result = document.getElementById(resultID);
-  /* Create lens: */
-  lens = document.createElement("DIV");
-  lens.setAttribute("class", "img-zoom-lens");
-  /* Insert lens: */
-  img.parentElement.insertBefore(lens, img);
-  /* Calculate the ratio between result DIV and lens: */
-  cx = result.offsetWidth / lens.offsetWidth;
-  cy = result.offsetHeight / lens.offsetHeight;
-  /* Set background properties for the result DIV */
-  result.style.backgroundImage = "url('" + img.src + "')";
-  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
-  /* Execute a function when someone moves the cursor over the image, or the lens: */
-  lens.addEventListener("mousemove", moveLens);
-  img.addEventListener("mousemove", moveLens);
-  /* And also for touch screens: */
-  lens.addEventListener("touchmove", moveLens);
-  img.addEventListener("touchmove", moveLens);
-  function moveLens(e) {
-    var pos, x, y;
-    /* Prevent any other actions that may occur when moving over the image */
-    e.preventDefault();
-    /* Get the cursor's x and y positions: */
-    pos = getCursorPos(e);
-    /* Calculate the position of the lens: */
-    x = pos.x - (lens.offsetWidth / 2);
-    y = pos.y - (lens.offsetHeight / 2);
-    /* Prevent the lens from being positioned outside the image: */
-    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
-    if (x < 0) {x = 0;}
-    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
-    if (y < 0) {y = 0;}
-    /* Set the position of the lens: */
-    lens.style.left = x + "px";
-    lens.style.top = y + "px";
-    /* Display what the lens "sees": */
-    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
-  }
-  function getCursorPos(e) {
-    var a, x = 0, y = 0;
-    e = e || window.event;
-    /* Get the x and y positions of the image: */
-    a = img.getBoundingClientRect();
-    /* Calculate the cursor's x and y coordinates, relative to the image: */
-    x = e.pageX - a.left;
-    y = e.pageY - a.top;
-    /* Consider any page scrolling: */
-    x = x - window.pageXOffset;
-    y = y - window.pageYOffset;
-    return {x : x, y : y};
-  }
-}
+
 // zoom End
