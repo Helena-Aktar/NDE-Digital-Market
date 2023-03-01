@@ -6,8 +6,8 @@ function show(imgID) {
   // console.log(p);
   var b = document.createElement("div");
   b.innerHTML = `
-    <img style="width: 280px; height: 270px; margin: 10px;" 
-    src="/sellers&Product_details/product_details/img/review_img/${imgID}.jpg" alt="">
+    <img style="width: 350px; height: 330px; margin: 10px; position:relative; align-item:right;" 
+    src="/Medical Equipment Image/Bone & Bone Marrow Biopsy/Bone Marrow Aspiration Needle/Stainless Steel Bone Marrow Aspiration Biopsy puncture Needle(${imgID}).png" alt="">
     `;
   a.appendChild(b);
   // console.log(a);
@@ -20,10 +20,10 @@ function off() {
 
 function change(a) {
   const arr = [
-    "/sellers&Product_details/product_details/img/1st_img.png",
-    "/sellers&Product_details/product_details/img/i2.png",
-    "/sellers&Product_details/product_details/img/i3.png",
-    "/sellers&Product_details/product_details/img/1st_img.png",
+    "/Medical Equipment Image/Bone & Bone Marrow Biopsy/Bone Marrow Aspiration Needle/Stainless Steel Bone Marrow Aspiration Biopsy puncture Needle(2).png",
+    "/Medical Equipment Image/Bone & Bone Marrow Biopsy/Bone Marrow Aspiration Needle/Stainless Steel Bone Marrow Aspiration Biopsy puncture Needle(0).png",
+    "/Medical Equipment Image/Bone & Bone Marrow Biopsy/Bone Marrow Aspiration Needle/Stainless Steel Bone Marrow Aspiration Biopsy puncture Needle(1).png",
+    "/Medical Equipment Image/Bone & Bone Marrow Biopsy/Bone Marrow Aspiration Needle/Stainless Steel Bone Marrow Aspiration Biopsy puncture Needle(3).png",
   ];
   console.log(a);
   console.log(arr[a]);
