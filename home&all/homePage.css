@@ -104,6 +104,81 @@ body {
 .profile:hover .profile-popup {
   display: block;
 }
+/* messages popup */
+.messages-popup {
+  color: black;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  box-shadow: 0 0 1rem var(--color-primary);
+  /* popup hidden */
+  display: none;
+}
+.messages-popup::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  height: 20px;
+  width: 20px;
+  display: block;
+  background: white;
+  left: 10px;
+  top: -9px;
+  transform: rotate(45deg);
+}
+.messages:hover .messages-popup {
+  display: block;
+}
+/* trade_assurance popup */
+.trade_assurance-popup {
+  color: black;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  box-shadow: 0 0 1rem var(--color-primary);
+  /* popup hidden */
+  display: none;
+}
+.trade_assurance-popup::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  height: 20px;
+  width: 20px;
+  display: block;
+  background: white;
+  left: 10px;
+  top: -9px;
+  transform: rotate(45deg);
+}
+.trade_assurance:hover .trade_assurance-popup {
+  display: block;
+}
+/* bag popup */
+.bag-popup {
+  color: black;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  box-shadow: 0 0 1rem var(--color-primary);
+  /* popup hidden */
+  display: none;
+}
+.bag-popup::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  height: 20px;
+  width: 20px;
+  display: block;
+  background: white;
+  left: 10px;
+  top: -9px;
+  transform: rotate(45deg);
+}
+.bag:hover .bag-popup {
+  display: block;
+}
 
 /* ---------- nav top right 2 --------- */
 .nav_top-right-2 {
@@ -121,6 +196,58 @@ body {
   vertical-align: middle;
   background-position: -14px -58px;
   background: #c1c3cd;
+}
+
+/* help popup */
+.help-popup {
+  color: black;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  box-shadow: 0 0 1rem var(--color-primary);
+  /* popup hidden */
+  display: none;
+}
+.help-popup::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  height: 20px;
+  width: 20px;
+  display: block;
+  background: white;
+  left: 10px;
+  top: -9px;
+  transform: rotate(45deg);
+}
+.help:hover .help-popup {
+  display: block;
+}
+/* more popup */
+.more-popup {
+  color: black;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  right: 10px;
+  box-shadow: 0 0 1rem var(--color-primary);
+  /* popup hidden */
+  display: none;
+}
+.more-popup::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  height: 20px;
+  width: 20px;
+  display: block;
+  background: white;
+  right: 10px;
+  top: -9px;
+  transform: rotate(45deg);
+}
+.more:hover .more-popup {
+  display: block;
 }
 
 /* ---------- nav bottom --------- */
@@ -203,13 +330,7 @@ body {
 .nav_bottom-links a:hover {
   text-decoration: underline;
 }
-/* background_darker */
-/* .background_darker {
-  position: relative;
-  top: -50px;
-  height: 50px;
-  background: linear-gradient(transparent, rgb(0, 0, 0));
-} */
+
 /* ====== main body ========== */
 .main_body {
   /* margin-left: 200px !important;
