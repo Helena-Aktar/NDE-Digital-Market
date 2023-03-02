@@ -16,9 +16,11 @@ body {
 }
 
 .product_subject{
+  font-size: 28px;
   color: var(--color-primary);
   text-shadow: 1px 1px 1px rgb(34, 77, 85);
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  text-align: center;
 }
 
 /* 
