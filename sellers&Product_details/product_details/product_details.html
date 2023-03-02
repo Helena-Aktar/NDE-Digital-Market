@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product_details</title>
-    <link rel="stylesheet" href="/sellers&Product_details/bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="/sellers&Product_details/bootstrap/css/bootstrap.css"
+    />
     <link
       rel="stylesheet"
       href="/sellers&Product_details/product_details/product_details.css"
@@ -30,16 +33,195 @@
           <!-- ========== navBAr ============= -->
           <div class="navBar">
             <!-- ------- nav top --------- -->
-            <div class="nav_top">
+            <div class="nav_top" style="z-index: 10">
+              <!-- style="position: fixed; width: 100%; z-index: 200;" -->
               <!-- ---------- nav top left ------------ -->
-              <div class="nav_top-left pt-2" style="width: 250px">
-                <div class="logo text-center ps-5">
-                  <h6 style="width: 200px">Steel Digital Market</h6>
-                </div>
-                <div class="categories">
-                  <div><i class="fa-solid fa-list"></i></div>
-                  <div class="ps-1 pe-1">Categories</div>
-                  <div><i class="fa-solid fa-angle-down"></i></div>
+              <div class="nav_top-left" style="width: 350px">
+                <a class="logo text-center ps-3" href="./homePage.html">
+                  <!-- <h6 style="width: 200px">NDE Digital Market</h6> -->
+                  <img
+                    style="height: 55px; width: 200px"
+                    src="/home&all/images/NDE_Digital_Market_LOGO.png"
+                    alt=""
+                  />
+                </a>
+                <!-- ---------- categories ------------ -->
+                <div id="top_navber" class="pt-3 ps-4">
+                  <a
+                    href="#"
+                    class="d-flex nav-icon2"
+                    style="text-decoration: none; color: black"
+                  >
+                    <i class="fa-solid fa-list pt-1"></i>
+                    <div class="ps-1 pe-1">Categories</div>
+                    <i class="nav-icon-arrow2 fa-solid fa-angle-down pt-1"></i>
+                  </a>
+                  <div
+                    id="top_navber_categories_hover"
+                    class="text-start position-absolute m-3 p-3 bg-white p-3 mb-5 bg-body rounded"
+                  >
+                    <!-- cat 1 -->
+                    <div id="top_sub_navber" class="pb-3">
+                      <h6>Bone & Bone Marrow Biopsy</h6>
+
+                      <div
+                        id="top_navber_Categories_sub_hover"
+                        class="position-absolute m-3 p-3 rounded bg-white"
+                      >
+                        <div class="m-4">
+                          <h5 class="text-muted">
+                            Bone Marrow Aspiration Needle
+                          </h5>
+                          <h5 class="text-muted">Bone Marrow Harvest Needle</h5>
+                          <h5 class="text-muted">
+                            Osty-Core™ Bone Biopsy Needle
+                          </h5>
+                          <h5 class="text-muted">
+                            Paediatric Bone Marrow Access Needle
+                          </h5>
+                          <h5 class="text-muted">
+                            T-Lok™ Bone Marrow Biopsy Needle
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of cat 1 -->
+                    <!-- cat 2 -->
+                    <div id="top_sub_navber" class="pb-3">
+                      <h6>Soft Tissue Biopsy</h6>
+
+                      <div
+                        id="top_navber_Categories_sub_hover"
+                        class="position-absolute m-3 p-3 rounded bg-white"
+                      >
+                        <div class="m-4">
+                          <h5 class="text-muted">
+                            BioPince Ultra® Full Core Biopsy Device with Co-ax
+                          </h5>
+                          <h5 class="text-muted">
+                            BioPince Ultra® Full Core Biopsy Instrument
+                          </h5>
+                          <h5 class="text-muted">Chiba Biopsy Needle</h5>
+                          <h5 class="text-muted">MaxiCELL™ Biopsy Needle</h5>
+                          <h5 class="text-muted">
+                            Pro-Mag™ II Ultra Automatic Biopsy Instrument
+                          </h5>
+                          <h5 class="text-muted">Spinal Biopsy Needle</h5>
+                          <h5 class="text-muted">
+                            SuperCore™ II Optional Echogenic Co-axial Introduc
+                          </h5>
+                          <h5 class="text-muted">
+                            TLAB® II Transjugular Liver Biopsy System
+                          </h5>
+                          <h5 class="text-muted">Trocar Needle</h5>
+                          <h5 class="text-muted">
+                            Tru-Core™ II Automatic Biopsy Instrument
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of cat 2 -->
+                    <!-- cat 3 -->
+                    <div id="top_sub_navber" class="pb-3">
+                      <h6>Umbilical Catheter</h6>
+                    </div>
+                    <!-- end of cat 3 -->
+                    <!-- cat 4 -->
+                    <div id="top_sub_navber" class="pb-3">
+                      <h6>Mammography</h6>
+
+                      <div
+                        id="top_navber_Categories_sub_hover"
+                        class="position-absolute m-3 p-3 rounded bg-white"
+                      >
+                        <div class="m-4">
+                          <h5 class="text-muted">
+                            Homer Breast Localization Needle
+                          </h5>
+                          <h5 class="text-muted">Bone Marrow Harvest Needle</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of cat 4 -->
+                    <!-- cat 5 -->
+                    <div id="top_sub_navber" class="pb-3">
+                      <h6>Breast Biopsy Site Marker</h6>
+
+                      <div
+                        id="top_navber_Categories_sub_hover"
+                        class="position-absolute m-3 p-3 rounded bg-white"
+                      >
+                        <div class="m-4">
+                          <h5 class="text-muted">
+                            Bone Marrow Aspiration Needle
+                          </h5>
+                          <h5 class="text-muted">Bone Marrow Harvest Needle</h5>
+                          <h5 class="text-muted">
+                            Osty-Core™ Bone Biopsy Needle
+                          </h5>
+                          <h5 class="text-muted">
+                            Paediatric Bone Marrow Access Needle
+                          </h5>
+                          <h5 class="text-muted">
+                            T-Lok™ Bone Marrow Biopsy Needle
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of cat 5 -->
+                    <!-- cat 6 -->
+                    <div id="top_sub_navber" class="pb-3">
+                      <h6>Expander</h6>
+
+                      <div
+                        id="top_navber_Categories_sub_hover"
+                        class="position-absolute m-3 p-3 rounded bg-white"
+                      >
+                        <div class="m-4">
+                          <h5 class="text-muted">Skin Expander</h5>
+                          <h5 class="text-muted">Kit Sizer</h5>
+                          <h5 class="text-muted">Injection Valve</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of cat 6 -->
+                    <!-- cat 7 -->
+                    <div id="top_sub_navber" class="pb-3">
+                      <h6>Huber Needle</h6>
+
+                      <div
+                        id="top_navber_Categories_sub_hover"
+                        class="position-absolute m-3 p-3 rounded bg-white"
+                      >
+                        <div class="m-4">
+                          <h5 class="text-muted">
+                            Osty-Core™ Bone Biopsy Needle
+                          </h5>
+                          <h5 class="text-muted">
+                            Polyperf Safe (Safety Huber Needle with Tubular)
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of cat 7 -->
+                    <!-- cat 8 -->
+                    <div id="top_sub_navber" class="pb-3">
+                      <h6>Breast Implant</h6>
+
+                      <div
+                        id="top_navber_Categories_sub_hover"
+                        class="position-absolute m-3 p-3 rounded bg-white"
+                      >
+                        <div class="m-4">
+                          <h5 class="text-muted">
+                            Sensity Anatomical Matrix, Macro-Textured Surface
+                          </h5>
+                          <h5 class="text-muted">Bone Marrow Harvest Needle</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of cat 8 -->
+                  </div>
                 </div>
               </div>
               <!-- ---------- nav top right ------------ -->
@@ -47,11 +229,11 @@
                 <!-- ---------- nav top right-1 ------------ -->
                 <div class="nav_top-right-1 d-flex" style="width: 200px">
                   <!-- ---- profile --- -->
-                  <div id="profile" class="profile">
-                    <i class="fa-solid fa-user px-1"></i>
+                  <div id="profile " class="profile nav-icon">
+                    <i class="fa-solid fa-user"></i>
 
-                    <i class="fa-solid fa-angle-down px-1"></i>
-
+                    <i class="nav-icon-arrow fa-solid fa-angle-down"></i>
+                    <!-- profile popup -->
                     <div
                       id="profile-popup"
                       class="profile-popup rounded-3 bg-white"
@@ -60,18 +242,18 @@
                       <div class="m-2 p-2">
                         <div class="d-grid gap-2">
                           <a
-                            href="./signinPage.html"
-                            class="btn rounded-5 p-1 fw-bold text-white"
+                            href="/home&all/signinPage.html"
+                            class="btn rounded p-1 fw-bold text-white"
                             style="
-                              border: 1px solid var( --color-primary);
-                              background: var( --color-primary);
+                              border: 1px solid var(--color-primary);
+                              background: var(--color-primary);
                             "
                           >
                             Sign in
                           </a>
                           <a
-                            href="./registrationPage.html"
-                            class="btn rounded-5 p-1 fw-bold btn-outline"
+                            href="/home&all/registrationPage.html"
+                            class="btn rounded p-1 fw-bold btn-outline"
                             style="border: 1px solid gray"
                           >
                             Join for free
@@ -79,54 +261,231 @@
                         </div>
                       </div>
                     </div>
+                    <!-- popup end -->
                   </div>
 
                   <!-- ---- messages --- -->
-                  <div class="messages">
-                    <i class="fa-solid fa-message px-1"></i>
-                    <i class="fa-solid fa-angle-down px-1"></i>
+                  <div class="messages nav-icon">
+                    <i class="fa-solid fa-message"></i>
+                    <i class="nav-icon-arrow fa-solid fa-angle-down"></i>
+                    <!-- Mesages popup -->
+                    <div
+                      id="messages-popup"
+                      class="messages-popup rounded-3 bg-white"
+                      style="width: 15%"
+                    >
+                      <div class="m-2 p-2">
+                        <div class="d-grid gap-2">
+                          <h5>Unread message reminder</h5>
+                          <p>
+                            We will remind you here when there is new message.
+                            Please log in to view.
+                          </p>
+                          <a
+                            class="btn w-100 text-white"
+                            href="/home&all/signinPage.html"
+                            style="background: var(--color-primary)"
+                            >Sign in</a
+                          >
+                          <p>
+                            New user? Please <a href="#">register</a> and start
+                            your business!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- popup end -->
                   </div>
                   <!-- ---- trade_assurance --- -->
-                  <div class="trade_assurance">
-                    <i class="fa-solid fa-clipboard-list px-1"></i>
-                    <i class="fa-solid fa-angle-down px-1"></i>
+                  <div class="trade_assurance nav-icon">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <i class="nav-icon-arrow fa-solid fa-angle-down"></i>
+                    <!-- trade_assurance popup -->
+                    <div
+                      id="trade_assurance-popup"
+                      class="trade_assurance-popup rounded-3 bg-white"
+                      style="width: 15%"
+                    >
+                      <div class="m-2 p-2">
+                        <div class="d-grid gap-2">
+                          <h5>
+                            <img
+                              class="me-2"
+                              src="/home&all/images/trade assurance.png"
+                              style="height: 40px"
+                            />Trade Assurance
+                          </h5>
+                          <small>Learn more</small>
+                          <p>portects your NDE.com order</p>
+                          <span class="fw-bold">Trade Assurance ensures:</span>
+                          <ul class="text-start">
+                            <li>Product quality</li>
+                            <li>On-timew shipment</li>
+                          </ul>
+                          <a
+                            class="btn text-white w-100"
+                            style="background: var(--color-primary)"
+                            href="#"
+                            >Order with Trade Assurance</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- popup end -->
                   </div>
                   <!-- ----  --- -->
-                  <div class="bag">
-                    <i class="fa-solid fa-bag-shopping px-1"></i>
-                    <i class="fa-solid fa-angle-down px-1"></i>
+                  <div class="bag nav-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <i class="nav-icon-arrow fa-solid fa-angle-down"></i>
+                    <!-- bag popup -->
+                    <div
+                      id="bag-popup"
+                      class="bag-popup rounded-3 bg-white"
+                      style="width: 15%"
+                    >
+                      <div class="m-2 p-2">
+                        <div class="d-grid gap-2">
+                          <p>You haven't signed in yet.</p>
+                          <a
+                            href="/home&all/signinPage.html"
+                            class="btn rounded p-1 fw-bold text-white"
+                            style="
+                              border: 1px solid var(--color-primary);
+                              background: var(--color-primary);
+                            "
+                          >
+                            Sign in
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- popup end -->
                   </div>
                 </div>
                 <!-- ---------- nav top right-2 ------------ -->
                 <div class="nav_top-right-2 d-flex" style="width: 350px">
                   <div class="delimiter"></div>
-                  <div class="help d-flex">
+                  <div class="help d-flex nav-icon2">
                     Help
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="nav-icon-arrow2 fa-solid fa-angle-down mt-1"></i>
+                    <!-- help popup -->
+                    <div
+                      id="help-popup"
+                      class="help-popup rounded-3 bg-white"
+                      style="width: 15%"
+                    >
+                      <div class="m-2 p-2">
+                        <div class="d-grid gap-2">
+                          <p>You haven't signed in yet.</p>
+                          <a
+                            href="/home&all/signinPage.html"
+                            class="btn rounded p-1 fw-bold text-white"
+                            style="
+                              border: 1px solid var(--color-primary);
+                              background: var(--color-primary);
+                            "
+                          >
+                            Sign in
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- popup end -->
                   </div>
                   <div class="delimiter"></div>
-                  <div class="d-flex">
+                  <div class="language_currency d-flex nav-icon2">
                     English-BDT
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="nav-icon-arrow2 fa-solid fa-angle-down mt-1"></i>
+                    <!-- language_currency popup -->
+                    <div
+                      id="language_currency-popup"
+                      class="language_currency-popup rounded-3 bg-white"
+                      style="width: 15%"
+                    >
+                      <div class="m-2 p-2">
+                        <div class="d-grid gap-2">
+                          <p>You haven't signed in yet.</p>
+                          <a
+                            href="/home&all/signinPage.html"
+                            class="btn rounded p-1 fw-bold text-white"
+                            style="
+                              border: 1px solid var(--color-primary);
+                              background: var(--color-primary);
+                            "
+                          >
+                            Sign in
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- popup end -->
                   </div>
                   <!-- <div class="delimiter"></div> -->
-                  <div class="location d-flex">
+                  <div class="location d-flex nav-icon2">
                     Ship to:
                     <div>
                       <img
-                        class="img-fluid"
+                        class="img-fluid ms-1"
                         src="/home&all/images/bangladesh.png"
                         alt=""
                       />
 
                       <!-- <img class="img-fluid" src="./images/bangladesh.png" alt="" /> -->
-                      <i class="fa-solid fa-angle-down"></i>
+                      <i
+                        class="nav-icon-arrow2 fa-solid fa-angle-down mt-1"
+                      ></i>
                     </div>
+                    <!-- location popup -->
+                    <div
+                      id="location-popup"
+                      class="location-popup rounded-3 bg-white"
+                      style="width: 15%"
+                    >
+                      <div class="m-2 p-2">
+                        <div class="d-grid gap-2">
+                          <p>You haven't signed in yet.</p>
+                          <a
+                            href="/home&all/signinPage.html"
+                            class="btn rounded p-1 fw-bold text-white"
+                            style="
+                              border: 1px solid var(--color-primary);
+                              background: var(--color-primary);
+                            "
+                          >
+                            Sign in
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- popup end -->
                   </div>
                   <div class="delimiter"></div>
-                  <div class="more d-flex">
+                  <div class="more d-flex nav-icon2">
                     More
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="nav-icon-arrow2 fa-solid fa-angle-down mt-1"></i>
+                    <!-- more popup -->
+                    <div
+                      id="more-popup"
+                      class="more-popup rounded-3 bg-white"
+                      style="width: 15%"
+                    >
+                      <div class="m-2 p-2">
+                        <div class="d-grid gap-2">
+                          <p>You haven't signed in yet.</p>
+                          <a
+                            href="/home&all/signinPage.html"
+                            class="btn rounded p-1 fw-bold text-white"
+                            style="
+                              border: 1px solid var(--color-primary);
+                              background: var(--color-primary);
+                            "
+                          >
+                            Sign in
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- popup end -->
                   </div>
                 </div>
               </div>
@@ -134,8 +493,13 @@
             <!-- ------- nav top end --------- -->
 
             <!-- ------- nav bottom --------- -->
-            <div class="nav_bottom" style="height: 250px">
+            <div class="nav_bottom">
               <div class="nav_bottom-header d-flex">
+                <a
+                  href="/home&all/homePage.html"
+                  class="nav_bottom-header-item m-3"
+                  >Home</a
+                >
                 <a
                   href="/home&all/productsPage.html"
                   class="nav_bottom-header-item m-3"
@@ -148,32 +512,90 @@
                 >
                 <!-- <div class="nav_bottom-header-item m-3">Sellers</div> -->
               </div>
+
+              <!-- ------- search bar ------ -->
+              <!--      style="z-index: 100; position: fixed; width: 850px; left: 450px" -->
+              <div id="mySearchBar" class="d-flex justify-content-center">
+                <div
+                  id="nav_bottom-search_bar"
+                  class="nav_bottom-search_bar d-flex justify-content-center bg-white"
+                >
+                  <!-- <div class="flex-grow-1"> -->
+                  <input
+                    class="w-100 ms-3"
+                    type="search"
+                    id="search_product"
+                    placeholder="search here.."
+                  />
+                  <!-- </div> -->
+                  <div class="d-flex">
+                    <!-- ms-5 mt-1 me-2 ps-4 -->
+                    <div class="cam-icon mt-1 me-2">
+                      <i class="fa-solid fa-camera pt-2"></i>
+                    </div>
+                    <button
+                      class="search_button text-center p-2"
+                      id="search_button"
+                      onclick="search()"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      Search
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- nav bottom links -->
+              <!-- <div class="d-flex justify-content-center m-1">
+              <div class="nav_bottom-links text-center w-75 rounded-pill p-2">
+                <a class="ms-1" href="#">dress</a>
+                <a class="ms-1" href="#">gucci shoes</a>
+                <a class="ms-1" href="#">t-shirt for men</a>
+                <a class="ms-1" href="#">finger sleeve</a>
+                <a class="ms-1" href="#">shoes men</a>
+                <a class="ms-1" href="#">shoes men</a>
+                <a class="ms-1" href="#">kitchen cabinet</a>
+                <a class="ms-1" href="#">shoes men</a>
+                <a class="ms-1" href="#">shoes men</a>
+                <a class="ms-1" href="#">electronics</a>
+              </div>
+            </div> -->
             </div>
             <!-- <div class="background_darker"></div> -->
+          </div>
+          <!-- scroll to top -->
+          <div class="bg-warning">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">
+              <i class="fa-solid fa-angle-up"></i>
+            </button>
           </div>
           <!-- ========== navBAr End ============= -->
         </section>
       </div>
-      <div id="body" style="margin-left: 40px; margin-right: 10px">
+      <div id="body" style="margin-left: 140px; margin-right: 140px">
         <section
           id="deatails_body_and_delivery"
-          class="mb-3 shadow p-3 mb-4 bg-white rounded"
+          class="p-1 rounded bg-white"
+          style="position: relative; top: -180px"
         >
-          <div class="row m-4">
-            <div class="col-md-8 d-flex">
-              <div id="product_image" class="m-3">
-                <div id="zoom">
+          <div
+            class="row m-4 rounded pe-4"
+            style="background: var(--color-gray)"
+          >
+            <h4 class="product_subject ms-4">Product Information:</h4>
+            <div class="col-md-8 d-flex" style="height: 580px">
+              <div id="product_image" class="bg-white m-3 rounded">
+                <div id="zoom" class="">
                   <!-- style="width: 420px; height: 350px" -->
                   <img
-                  id="root_img"
-                  class="image"
-                  src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless-Steel-Bone-Marrow-Aspiration-Biopsy-puncture-Needle-3.png"
-                  alt=""
+                    id="root_img"
+                    class="ms-5 mt-2 image border"
+                    src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless-Steel-Bone-Marrow-Aspiration-Biopsy-puncture-Needle-3.png"
+                    alt=""
                   />
-                  <div class="lens"></div>
+                  <div class="ms-2 lens"></div>
                   <div class="res"></div>
                 </div>
-                <div class="d-flex justify-content-center m-3">
+                <div class="d-flex justify-content-around m-3 border">
                   <img
                     onclick="change(0)"
                     style="width: 80px; height: 70px; margin-right: 10px"
@@ -200,22 +622,23 @@
                   />
                 </div>
               </div>
-              <div style="font-size: 16px" class="m-3">
-                <h3 class="mb-5">
+              <!-- product name etc -->
+              <div style="font-size: 16px" class="m-3 p-2 rounded bg-white">
+                <h3 class="mb-2">
                   Stainless Steel Bone Marrow Aspiration Biopsy puncture Needle
                 </h3>
                 <img
-                  style="width: 20px; height: 20px; margin-right: 10px"
+                  style="width: 20px; height: 20px; margin-right: 5px"
                   src="/sellers&Product_details/product_details/img/full_star.png"
                   alt=""
                 />
                 <img
-                  style="width: 20px; height: 20px; margin-right: 10px"
+                  style="width: 20px; height: 20px; margin-right: 5px"
                   src="/sellers&Product_details/product_details/img/full_star.png"
                   alt=""
                 />
                 <img
-                  style="width: 20px; height: 20px; margin-right: 10px"
+                  style="width: 20px; height: 20px; margin-right: 5px"
                   src="/sellers&Product_details/product_details/img/full_star.png"
                   alt=""
                 />
@@ -230,9 +653,9 @@
                 | <a href="#">! Answered Questions</a><br />
                 <label>Brand: </label> <a href="#">No Brand</a> |
                 <a href="#">More Automotive form No Brand</a>
-                <h2 class="mt-5">৳ 860</h2>
+                <h4 class="mt-2">৳ 860</h4>
                 <span><s>৳ 1430</s></span> <span> -67%</span><br />
-                <p class="mb-5"></p>
+                <p class="mb-4"></p>
                 <div class="w-100 mb-5">
                   <label>Quantity</label>
                   <button class="w-25" type="button">-</button>
@@ -243,7 +666,7 @@
                   <a
                     class="btn btn-outline-dark w-50 m-2"
                     href="#"
-                    style="background: rgb(215, 212, 238)"
+                    style="background: var(--color-primary); color: white"
                     >Buy Now</a
                   >
                   <a class="btn btn-outline-dark w-50 m-2" href="#"
@@ -252,25 +675,35 @@
                 </div>
               </div>
             </div>
+            <!-- delivery -->
             <div
               id="delivery"
-              style="font-size: 14px"
-              class="col-6 col-md-4 mb-4 mt-4"
+              style="font-size: 14px; height: 550px"
+              class="col-6 col-md-4 mb-4 mt-3 rounded bg-white"
             >
               <div>
                 <div>
-                  <p>Delivery
-                    <i class="bi bi-info-circle" style="padding-left: 440px; font-size: 16px;"></i>
-                  </p>
+                  <h4 class="ms-2 mt-2 mb-2">
+                    Delivery details:
+                    <i
+                      class="bi bi-info-circle"
+                      style="
+                        font-size: 16px;
+                        top: -10px;
+                        left: 280px;
+                        position: relative;
+                      "
+                    ></i>
+                  </h4>
                 </div>
-                <div class="d-flex justify-content-between m-4">
+                <div class="d-flex justify-content-between">
                   <div>
                     <i class="bi bi-geo-alt-fill"></i>
                     <label>Dhaka, Dhaka North, Banani Road No. 12 - 19</label>
                   </div>
                   <a href="#">CHANGE</a>
                 </div>
-                <div class="d-flex justify-content-between m-4">
+                <div class="d-flex justify-content-between">
                   <div>
                     <i class="bi bi-geo-alt-fill"></i>
                     <span>Standard Delivery</span>
@@ -278,49 +711,73 @@
                   </div>
                   <h4>৳ 62</h4>
                 </div>
-                <div class="text-center">
+                <div class="">
                   Enjoy free shipping promotion with minimum spend of ৳ 5,000
                   from <a href="#"> Crazy Shop.</a>
                 </div>
+                <div class="d-flex mt-2">
+                  <i
+                    class="bi bi-geo-alt-fill"
+                    style="font-size: 20px; padding-left: 16px"
+                  ></i>
+                  <h6 class="ms-1 mt-1">Cash on Delivery Available</h6>
+                </div>
+              </div>
+              <div>
+                <div class="mt-2">
+                  <h5>
+                    Service:
+                    <i
+                      class="bi bi-info-circle"
+                      style="
+                        font-size: 16px;
+                        top: 0;
+                        left: 390px;
+                        position: relative;
+                      "
+                    ></i>
+                  </h5>
+                </div>
                 <div class="d-flex">
-                  <i class="bi bi-geo-alt-fill m-2" style="font-size: 20px; padding-left: 16px;"></i>
-                  <h4 class="m-2">Cash on Delivery Available</h4>
+                  <div class="d-flex justify-content-start ms-4">
+                    <i
+                      style="font-size: 32px; margin-right: 16px"
+                      class="bi bi-geo-alt-fill"
+                    ></i>
+                    <div class="m-0 p-0 ml-2">
+                      <h6>7 Days Returns</h6>
+                      <small>Change of mind is not applicable</small>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-start m-4">
+                    <i
+                      style="
+                        font-size: 22px;
+                        padding-left: 8px;
+                        margin-right: 8px;
+                      "
+                      class="bi bi-geo-alt-fill"
+                    ></i>
+                    <div class="text-center">
+                      <h6>Warranty not available</h6>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div>
-                <div class="mt-4">
-                  <p>Service
-                    <i class="bi bi-info-circle" style="padding-left: 440px; font-size: 16px;"></i>
-                  </p>
-                </div>
-                <div class="d-flex justify-content-start m-4">
-                  <i style="font-size: 36px; margin-right: 16px;" class="bi bi-geo-alt-fill" ></i>
-                  <div class="m-0 p-0 ml-2">
-                    <h4>7 Days Returns</h4>
-                    <small>Change of mind is not applicable</small>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-start m-4">
-                  <i style="font-size: 22px; padding-left: 8px; margin-right: 8px;" class="bi bi-geo-alt-fill"></i>
-                  <div class="text-center">
-                    <h4>Warranty not available</h4>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="d-flex justify-content-between m-4">
-                  <div>
-                    <small>Sold by</small>
-                    <h4>Crazy Shop</h4>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex">
+                    <h5>Sold by:</h5>
+                    <h6 class="mt-1 ms-3">Crazy Shop</h6>
                   </div>
                   <div>
                     <a href="#">CHAT</a>
                   </div>
                 </div>
-                <div class="d-flex justify-content-around">
-                  <small>Positive Seller Ratings</small>
-                  <small>Ship on Time</small>
-                  <small>Chat Response Rate</small>
+                <div class="d-flex justify-content-around mt-4">
+                  <h6>Positive Seller Ratings</h6>
+                  <h6>Ship on Time</h6>
+                  <h6>Chat Response Rate</h6>
                 </div>
                 <div class="d-flex justify-content-around">
                   <h4>83%</h4>
@@ -334,42 +791,40 @@
             </div>
           </div>
         </section>
-        <!-- <section id="combo_offer" class="mb-3 shadow p-3 mb-4 bg-white shadow p-3 mb-4 bg-white rounded">
-                <div class="row">
-                    <div style="font-size: 20px;" class="col-md-12 text-start d-flex justify-content-around m-4">
-                        <div class="t">
-                            <img style="margin-right: 10px;" src="/sellers&Product_details/product_details/img/i1.png" alt=""> +
-                            <img style="margin-right: 10px;" src="/sellers&Product_details/product_details/img/i2.png" alt=""> +
-                            <img style="margin-right: 10px;" src="/sellers&Product_details/product_details/img/i3.png" alt="">
-                            <p class="pt-4">Total: ৳ 346</p>
-                            <p>
-                            <h4>Combo Price: ৳ 346</h4> Save ৳ 3</p>
-                        </div>
-                        <a style="font-size: 16px; margin-top: 140px; height: 35px; margin-right: 80px;"
-                            class="btn btn-primary text-center" href="#"> Add 3 To bag</a>
-                    </div>
-                </div>
-            </section> -->
         <section
           id="Product_full_details"
-          class="mb-3 shadow p-3 mb-4 bg-white shadow p-3 mb-4 bg-white rounded"
+          class="bg-white rounded p-2 mt-5"
+          style="position: relative; top: -180px"
         >
           <div class="row">
-            <div style="font-size: 16px" class="col-md-10">
+            <div
+              style="
+                font-size: 16px;
+                margin-left: 150px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                background: var(--color-gray);
+              "
+              class="col-md-10 rounded p-4"
+            >
               <div>
                 <div>
-                  <h3>
-                    Product details of Stainless Steel Bone Marrow Aspiration Biopsy puncture Needle
+                  <h3 class="product_subject">
+                    Product details of Stainless Steel Bone Marrow Aspiration
+                    Biopsy puncture Needle
                   </h3>
                 </div>
-                <div class="d-flex mb-4 mt-4 " style="font-size: 18px;">
+                <div
+                  class="d-flex mb-4 mt-4 bg-white rounded"
+                  style="font-size: 18px"
+                >
                   <div>
                     <ul>
-                      <li>Name: Bone marrow needle </li>
+                      <li>Name: Bone marrow needle</li>
                       <li>Type: Biopsy type</li>
                       <li>Needle Guage: 8G 11G 13G</li>
                       <li>Needle Length: 50mm 100mm</li>
-                      <li>Category: Bone & Bone Marrow Biopsy </li>
+                      <li>Category: Bone & Bone Marrow Biopsy</li>
                       <li>Material: steel</li>
                       <li>Hollow cannula: Yes</li>
                       <li>Solid cannula: Yes</li>
@@ -377,79 +832,107 @@
                       <li>Shelf life: 3 years</li>
                     </ul>
                   </div>
-                  <div style="margin-left: 300px;">
-                    <img style="height: 350px;width: 550px;" src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless-Steel-Bone-Marrow-Aspiration-Biopsy-puncture-Needle-2.png" alt="">
+                  <div style="margin-left: 300px">
+                    <img
+                      style="height: 350px; width: 550px"
+                      src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless-Steel-Bone-Marrow-Aspiration-Biopsy-puncture-Needle-2.png"
+                      alt=""
+                    />
                   </div>
                 </div>
-                <div class="m-0 p-0">
-                  <p class="bg-success" style="font-size: 36px;">
+                <div class="mt-5">
+                  <p class="product_subject" style="font-size: 36px">
                     Product Details
                   </p>
                   <!-- 01 -->
-                  <div class="d-flex">
+                  <div class="d-flex bg-white border border-3 rounded p-2">
                     <div>
-                      <h2>Handle</h2>
-                      <p>Handle design accord with human body engineering,
-                         make with very comfortable feeling,
-                          also can more easily take in clinical use to bone marrow tissue,
-                           handle design conforms to any doctor's hand,
-                         surface adopts the frosted handle design makes interface is more stable, not easy to slide.</p>
+                      <h2 class="product_subject">Handle</h2>
+                      <p>
+                        Handle design accord with human body engineering, make
+                        with very comfortable feeling, also can more easily take
+                        in clinical use to bone marrow tissue, handle design
+                        conforms to any doctor's hand, surface adopts the
+                        frosted handle design makes interface is more stable,
+                        not easy to slide.
+                      </p>
                     </div>
                     <div>
-                      <img style="height: 300px; width: 700px;" 
-                      src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/product_details/0.png" alt="">
+                      <img
+                        style="height: 300px; width: 700px"
+                        src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/product_details/0.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                   <!-- 02 -->
-                  <div class="d-flex">
+                  <div class="d-flex bg-white border border-3 rounded p-2">
                     <div>
-                      <img style="height: 300px; width: 700px;" 
-                      src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/product_details/1.png" alt="">
+                      <img
+                        style="height: 300px; width: 700px"
+                        src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/product_details/1.png"
+                        alt=""
+                      />
                     </div>
                     <div>
-                      <h2>Special Tip</h2>
-                      <p>Handle design accord with human body engineering,
-                         make with very comfortable feeling,
-                          also can more easily take in clinical use to bone marrow tissue,
-                           handle design conforms to any doctor's hand,
-                         surface adopts the frosted handle design makes interface is more stable, not easy to slide.
+                      <h2 class="product_subject">Special Tip</h2>
+                      <p>
+                        Handle design accord with human body engineering, make
+                        with very comfortable feeling, also can more easily take
+                        in clinical use to bone marrow tissue, handle design
+                        conforms to any doctor's hand, surface adopts the
+                        frosted handle design makes interface is more stable,
+                        not easy to slide.
                       </p>
                     </div>
                   </div>
                   <!-- 03 -->
-                  <div class="d-flex">
+                  <div class="d-flex bg-white border border-3 rounded p-2">
                     <div>
-                      <h2>Hollow cannula</h2>
-                      <p>Handle design accord with human body engineering,
-                         make with very comfortable feeling,
-                          also can more easily take in clinical use to bone marrow tissue,
-                           handle design conforms to any doctor's hand,
-                         surface adopts the frosted handle design makes interface is more stable, not easy to slide.</p>
+                      <h2 class="product_subject">Hollow cannula</h2>
+                      <p>
+                        Handle design accord with human body engineering, make
+                        with very comfortable feeling, also can more easily take
+                        in clinical use to bone marrow tissue, handle design
+                        conforms to any doctor's hand, surface adopts the
+                        frosted handle design makes interface is more stable,
+                        not easy to slide.
+                      </p>
                     </div>
                     <div>
-                      <img style="height: 300px; width: 700px;" 
-                      src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/product_details/2.png" alt="">
+                      <img
+                        style="height: 300px; width: 700px"
+                        src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/product_details/2.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                   <!-- 04 -->
-                  <div class="d-flex">
+                  <div class="d-flex bg-white border border-3 rounded p-2">
                     <div>
-                      <img style="height: 300px; width: 700px;" 
-                      src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/product_details/3.png" alt="">
+                      <img
+                        style="height: 300px; width: 700px"
+                        src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/product_details/3.png"
+                        alt=""
+                      />
                     </div>
                     <div>
-                      <h2>Solid cannula</h2>
-                      <p>Handle design accord with human body engineering,
-                         make with very comfortable feeling,
-                          also can more easily take in clinical use to bone marrow tissue,
-                           handle design conforms to any doctor's hand,
-                         surface adopts the frosted handle design makes interface is more stable, not easy to slide.
-                        </p>
+                      <h2 class="product_subject">Solid cannula</h2>
+                      <p>
+                        Handle design accord with human body engineering, make
+                        with very comfortable feeling, also can more easily take
+                        in clinical use to bone marrow tissue, handle design
+                        conforms to any doctor's hand, surface adopts the
+                        frosted handle design makes interface is more stable,
+                        not easy to slide.
+                      </p>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <table class="table">
+                  <table
+                    class="table bg-white p-1 mt-3 border border-3 rounded"
+                  >
                     <thead>
                       <tr>
                         <th scope="col">Model</th>
@@ -481,13 +964,14 @@
         </section>
         <section
           id="Product_rating_review"
-          class="m-5 mb-3 shadow p-3 mb-4 bg-white shadow p-3 mb-4 bg-white rounded"
+          class="mt-5 mb-3 shadow p-3 mb-4 bg-white shadow p-3 mb-4 bg-white rounded"
+          style="position: relative; top: -180px"
         >
           <div class="row">
             <div class="col-md-10">
               <div id="rating">
                 <div class="mb-4">
-                  <h4>
+                  <h4 class="product_subject">
                     Ratings & Reviews of Anti-lost keychain with Mobile Number
                     for Bicycle Car Auto Motor Cycle Key Ring Gift for Husband
                   </h4>
@@ -746,7 +1230,10 @@
                       alt=""
                     />
                   </div>
-                  <div id="print" style="position: relative; align-items: end;"></div>
+                  <div
+                    id="print"
+                    style="position: relative; align-items: end"
+                  ></div>
                 </div>
                 <div>
                   <img src="/product_details/img/full_star.png" alt="" />
@@ -783,7 +1270,8 @@
         </section>
         <section
           id="Questions_About_This_Product"
-          class="m-5 mb-3 shadow p-3 mb-4 bg-white shadow p-3 mb-4 bg-white rounded"
+          class="mt-5 mb-3 shadow p-3 mb-4 bg-white shadow p-3 mb-4 bg-white rounded"
+          style="position: relative; top: -180px"
         >
           <div class="row">
             <div style="font-size: 16px" class="col-md-10 text-start">
@@ -796,12 +1284,19 @@
                 <p>Other questions answered by Crazy Shop</p>
               </div>
               <div class="mb-4">
-                <p><i class="bi bi-question-square-fill m-2"></i>ওর্ডার করছি দয়া করে,,কালো টা দিবেন</p>
-                <small class="m-2" style="padding-left: 24px;">MD S. - 25 Apr 2022</small>
+                <p>
+                  <i class="bi bi-question-square-fill m-2"></i>ওর্ডার করছি দয়া
+                  করে,,কালো টা দিবেন
+                </p>
+                <small class="m-2" style="padding-left: 24px"
+                  >MD S. - 25 Apr 2022</small
+                >
               </div>
               <div class="mt-3">
                 <p><i class="bi bi-people-fill m-2"></i>ok</p>
-                <small class="m-2" style="padding-left: 24px;">Steel Digital Market- answered within 5 days</small>
+                <small class="m-2" style="padding-left: 24px"
+                  >Steel Digital Market- answered within 5 days</small
+                >
               </div>
             </div>
             <div class="col-md-2"></div>
@@ -809,153 +1304,192 @@
         </section>
         <section
           id="People_Who_Viewed_This_Item_Also_Viewed"
-          class="m-5 mb-3 mb-3 shadow p-3 mb-4 bg-white shadow p-3 mb-4 bg-white rounded"
+          class="mt-5 bg-white mb-4  rounded"
+          style="position: relative; top: -180px"
         >
           <div class="row">
             <div class="col-md-12 text-center">
               <!-- ================ Products ============ -->
-              <div class="rounded-3 ps-2 bg-white mt-3 d-flex">
-                <div class="products rounded-3 mt-2 mb-2 w-100">
-                  <h4 class="ms-3">Products</h4>
-                  <div class="d-flex flex-wrap justify-content-center">
-                    <!-- row 1 -->
-                    <!-- <div class="d-flex ms-3 me-3 mb-3"> -->
+              <div
+                class="rounded-3 ps-2 bg-white mt-3 d-flex"
+               
+              >
+                <div class="products rounded-3 mt-2 mb-2 w-100 p-2">
+                  <h4 class="ms-4 product_subject">Just For You</h4>
+                  <div class="d-flex flex-wrap justify-content-between">
                     <!-- card 1 -->
-                    <div class="product">
+                    <div class="product d-flex">
                       <div class="border rounded-3 m-2">
                         <img
-                          src="/home&all/images/just 1.jpg"
+                          src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless-Steel-Bone-Marrow-Aspiration-Biopsy-puncture-Needle-0.png"
                           class="card-img-top rounded-3"
+                          style="height: 220px; width: 220px"
                           alt=""
-                          style="height: 220px"
                         />
-                        <div class="text-center mt-2">
+                        <div class="text-center mt-2 m-1">
                           <span
                             class="title d-inline-block text-truncate"
                             style="max-width: 200px"
                           >
-                            Water Bottle Purple Portable Gym 5v Charging Vortex
-                            Protein Powder Shake Bottle
+                            Stainless Steel Bone Marrow Aspiration Biopsy
+                            puncture Needle
                           </span>
-                          <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                          <h5 class="card-text fw-bold fs-6">BDT 10760.50</h5>
                           <h6 class="text-muted">MOQ: 100 pieces</h6>
                         </div>
                       </div>
+                      <!-- ====== Product details Popup ======= -->
+                      <!-- <p style="background-color: blue" class="bg-denger">heloo</p> -->
+                      <div
+                        id="product_details-popup"
+                        class="product_details-popup rounded-3 bg-white"
+                        style="width: 350px"
+                      >
+                        <div class="m-2 p-2" style="text-align: center">
+                          <img
+                            src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless-Steel-Bone-Marrow-Aspiration-Biopsy-puncture-Needle-0.png"
+                            class="card-img-top rounded-3"
+                            style="height: 250px; width: 220px"
+                            alt=""
+                          />
+                          <div class="notification-body">
+                            <h5>
+                              Stainless Steel Bone Marrow Aspiration Biopsy
+                              puncture Needle
+                            </h5>
+                            <h6 class="text-start">Type: Biopsy type</h6>
+                            <h6 class="text-start text-muted">
+                              Category: Bone-&-Bone-Marrow-Biopsy
+                            </h6>
+                            <h6 class="text-start text-muted">
+                              Needle Guage: 8G 11G 13G
+                            </h6>
+                            <h6 class="text-start text-muted">
+                              Needle Length: 50mm 100mm
+                            </h6>
+                            <a
+                              href="/sellers&Product_details/product_details/product_details.html"
+                              class="btn rounded-5 p-1 fw-bold text-white"
+                              style="
+                                border: 1px solid var(--color-primary);
+                                background: var(--color-primary);
+                                width: 100px;
+                              "
+                            >
+                              See more
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ====== End of Product details Popup ======= -->
                     </div>
+
                     <!-- card 2 -->
-                    <div class="product">
-                      <div class="border rounded-3 m-2">
-                        <img
-                          src="/home&all/images/just 2.jpg"
-                          class="card-img-top rounded-3"
-                          alt=""
-                          style="height: 220px"
-                        />
-                        <div class="text-center mt-2">
-                          <span
-                            class="title d-inline-block text-truncate"
-                            style="max-width: 200px"
-                          >
-                            Coin Machine
-                          </span>
-                          <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
-                          <h6 class="text-muted">MOQ: 100 pieces</h6>
-                        </div>
+                    <div class="border rounded-3 m-2">
+                      <img
+                        src="/Medical-Equipment-Image/Breast Biopsy Site Marker/HydroMARK™ Breast Biopsy Site Marker/HydroMARK™ Breast Biopsy Site Marker(2).png"
+                        class="card-img-top rounded-3"
+                        style="height: 220px; width: 220px"
+                        alt=""
+                      />
+                      <div class="text-center mt-2 m-1">
+                        <span
+                          class="title d-inline-block text-truncate"
+                          style="max-width: 200px"
+                        >
+                          HydroMARK™ Breast Biopsy Site Marker
+                        </span>
+                        <h5 class="card-text fw-bold fs-6">BDT 90760.50</h5>
+                        <h6 class="text-muted">MOQ: 10 pieces</h6>
                       </div>
                     </div>
+
                     <!-- card -3 -->
-                    <div class="product">
-                      <div class="border rounded-3 m-2">
-                        <img
-                          src="/home&all/images/just 3.jpg"
-                          class="card-img-top rounded-3"
-                          alt=""
-                          style="height: 220px"
-                        />
-                        <div class="text-center mt-2">
-                          <span
-                            class="title d-inline-block text-truncate"
-                            style="max-width: 200px"
-                          >
-                            Gray Bottle
-                          </span>
-                          <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
-                          <h6 class="text-muted">MOQ: 100 pieces</h6>
-                        </div>
+
+                    <div class="border rounded-3 m-2">
+                      <img
+                        src="/Medical-Equipment-Image/Expander/Injection Valve/Injection Valve(2).jpg"
+                        class="card-img-top rounded-3"
+                        style="height: 220px; width: 220px"
+                        alt=""
+                      />
+                      <div class="text-center mt-2 m-1">
+                        <span
+                          class="title d-inline-block text-truncate"
+                          style="max-width: 200px"
+                        >
+                          Injection Valve
+                        </span>
+                        <h5 class="card-text fw-bold fs-6">BDT 9760.50</h5>
+                        <h6 class="text-muted">MOQ: 10 pieces</h6>
                       </div>
                     </div>
+
                     <!-- card 4  -->
-                    <div class="product">
-                      <div class="border rounded-3 m-2">
-                        <img
-                          src="/home&all/images/just 4.jpg"
-                          class="card-img-top rounded-3"
-                          alt=""
-                          style="height: 220px"
-                        />
-                        <div class="text-center mt-2">
-                          <span
-                            class="title d-inline-block text-truncate"
-                            style="max-width: 200px"
-                          >
-                            Earbuds
-                          </span>
-                          <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
-                          <h6 class="text-muted">MOQ: 100 pieces</h6>
-                        </div>
+
+                    <div class="border rounded-3 m-2">
+                      <img
+                        src="/Medical-Equipment-Image/Expander/Skin Expander/Skin Expander(2).png"
+                        class="card-img-top rounded-3"
+                        style="height: 220px; width: 220px"
+                        alt=""
+                      />
+                      <div class="text-center mt-2 m-1">
+                        <span
+                          class="title d-inline-block text-truncate"
+                          style="max-width: 200px"
+                        >
+                          Skin Expander
+                        </span>
+                        <h5 class="card-text fw-bold fs-6">BDT 8960.50</h5>
+                        <h6 class="text-muted">MOQ: 100 pieces</h6>
                       </div>
                     </div>
-                    <!-- card 4  -->
-                    <div class="product">
-                      <div class="border rounded-3 m-2">
-                        <img
-                          src="/home&all/images/just 5.jpg"
-                          class="card-img-top rounded-3"
-                          alt=""
-                          style="height: 220px"
-                        />
-                        <div class="text-center mt-2">
-                          <span
-                            class="title d-inline-block text-truncate"
-                            style="max-width: 200px"
-                          >
-                            Earbuds
-                          </span>
-                          <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
-                          <h6 class="text-muted">MOQ: 100 pieces</h6>
-                        </div>
+
+                    <!-- card 5  -->
+
+                    <div class="border rounded-3 m-2">
+                      <img
+                        src="/Medical-Equipment-Image/Huber Needle/Polyperf Safe (Safety Huber Needle with Tubular)/Polyperf Safe (Safety Huber Needle with Tubular)(1).jpg"
+                        class="card-img-top rounded-3"
+                        style="height: 220px; width: 220px"
+                        alt=""
+                      />
+                      <div class="text-center mt-2 m-1">
+                        <span
+                          class="title d-inline-block text-truncate"
+                          style="max-width: 200px"
+                        >
+                          Polyperf Safe (Safety Huber Needle with Tubular)
+                        </span>
+                        <h5 class="card-text fw-bold fs-6">BDT 2960.50</h5>
+                        <h6 class="text-muted">MOQ: 1000 pieces</h6>
                       </div>
                     </div>
-                    <!-- card -5 -->
-                    <div class="product">
-                      <div class="border rounded-3 m-1">
-                        <img
-                          src="/home&all/images/just 6.jpg"
-                          class="card-img-top rounded-3"
-                          alt=""
-                          style="height: 220px"
-                        />
-                        <div class="text-center mt-2">
-                          <span
-                            class="d-inline-block text-truncate"
-                            style="max-width: 200px"
-                          >
-                            Water Bottle Purple Portable Gym 5v Charging Vortex
-                            Protein Powder Shake Bottle
-                          </span>
-                          <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
-                          <h6 class="text-muted">MOQ: 100 pieces</h6>
-                        </div>
+
+                    
+
+                    <!-- card 6  -->
+
+                    <div class="border rounded-3 m-2">
+                      <img
+                        src="/Medical-Equipment-Image/Soft Tissue Biopsy/soft tissue biopsy tray.jpg"
+                        class="card-img-top rounded-3"
+                        style="height: 220px; width: 220px"
+                        alt=""
+                      />
+                      <div class="text-center mt-2 m-1">
+                        <span
+                          class="title d-inline-block text-truncate"
+                          style="max-width: 200px"
+                        >
+                          Soft Tissue Biopsy Tray
+                        </span>
+                        <h5 class="card-text fw-bold fs-6">BDT 9960.50</h5>
+                        <h6 class="text-muted">MOQ: 100 pieces</h6>
                       </div>
                     </div>
-                    <!-- card end -->
-                    <!-- </div> -->
-                    <!-- row-1 end -->
-                    <!-- row-2  -->
-                    <!-- <div class="d-flex justify-content-between ms-3 me-3 mb-3"> -->
-                    <!-- card end -->
-                    <!-- </div> -->
-                    <!-- row-3 end -->
+                    <!-- end cards -->
                   </div>
                 </div>
               </div>
@@ -965,9 +1499,9 @@
           </div>
         </section>
       </div>
-      <div id="foot">
+      <div id="foot" >
         <!-- ========== footer Start ============= -->
-        <div class="footer">
+        <div class="footer" >
           <!-- footer top -->
           <div class="ms-5 me-5 mt-3 mb-3 ps-5 pe-5">
             <div class="p-2">
@@ -1069,9 +1603,7 @@
                 العربية - ภาษาไทย - Türk - Nederlands - tiếng Việt - Indonesian
                 - עברית
               </div>
-              <div>
-                NDE.com | 1688.com | Tmall Taobao World | ePay | Lazada
-              </div>
+              <div>NDE.com | 1688.com | Tmall Taobao World | ePay | Lazada</div>
               <div>
                 Browse Alphabetically: Onetouch | Showroom | Country Search |
                 Suppliers | Affiliate

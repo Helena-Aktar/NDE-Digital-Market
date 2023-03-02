@@ -170,14 +170,14 @@ a {
 #top_navber:hover #top_navber_buyer_hover {
   display: block;
 }
-#top_navber_categories_hover {
-  /* display: flex !important; */
+/* #top_navber_categories_hover {
+  display: flex !important;
   display: none;
   left: 0%;
   width: 30%;
   height: auto;
   z-index: 2000;
-  /* background-color: rgb(21, 182, 42) !important; */
+  background-color: rgb(21, 182, 42) !important;
   top: 90%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) !important;
 }
@@ -191,11 +191,11 @@ a {
   left: 50px;
   top: -10px;
   transform: rotate(45deg);
-  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
-  /* z-index: -40000; */
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  z-index: -40000;
 }
 #top_navber_Categories_sub_hover {
-  /* display: flex !important; */
+  display: flex !important;
   display: none;
   left: 97%;
   width: 130% !important;
@@ -209,7 +209,7 @@ a {
 }
 #top_sub_navber:hover #top_navber_Categories_sub_hover {
   display: block;
-}
+} */
 
 #cart_hover {
   /* background-color: aqua; */
@@ -297,12 +297,11 @@ a {
 /* =========== footer  end ========== */
 
 .btn:hover {
-  background: var( --color-primary) !important;
+  background: var(--color-primary) !important;
   color: white !important;
 }
 
-#show_All_Categories{
+#show_All_Categories {
   display: none;
-  left: -.8%;
-  
+  left: -0.8%;
 }

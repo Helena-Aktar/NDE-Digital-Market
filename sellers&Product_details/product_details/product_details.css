@@ -8,17 +8,12 @@ html {
   /* overflow-x: hidden; */
   scroll-padding-top: 5.5rem;
   scroll-behavior: smooth;
-  background-color: blueviolet !important;
+  
 }
-body {
-  background-color: rgb(102, 102, 197) !important;
-  /* background-image: url("/img/body1.jpg");
+body{
+  background: var(--color-gray) !important;
+}
 
-} 
-a {
-  text-decoration: none !important;
-  /* color: black !important; */
-}
 #container {
   /* font-size: 14px; */
   /* position: relative; */
@@ -106,3 +101,12 @@ a {
 } */
 
 /* zoom End */
+
+
+.product_subject{
+  font-size: 32px;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 1px rgb(34, 77, 85);
+  /* text-decoration: underline; */
+  text-align: center;
+}

@@ -319,7 +319,7 @@ body {
   font-size: 20px;
 }
 .nav_bottom-header-item {
-  color: white;
+  color: white !important;
   text-decoration: none;
   text-align: center;
   text-shadow: 3px 2px 3px rgb(0, 0, 0), 0 0 1em rgb(59, 74, 77),
