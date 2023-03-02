@@ -10,4 +10,13 @@ sellHover.addEventListener('mouseover',function(){
     //     a.style.display="block";
     // }
 })
-
+function showAllCategories()
+{
+    const a = document.getElementById("show_All_Categories");
+    if(a.style.display!="block")
+    {
+        a.style.display="block";
+    }else{
+        a.style.display="none";
+    }
+}

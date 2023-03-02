@@ -300,3 +300,9 @@ a {
   background: var( --color-primary) !important;
   color: white !important;
 }
+
+#show_All_Categories{
+  display: none;
+  left: -.8%;
+  
+}
