@@ -19,7 +19,7 @@ function updateValues() {
   if (value2 == "tushar" && value1 == 12345) {
     button.removeEventListener("mouseover", moveButton);
         button.addEventListener("click", function () {
-            alert("login Successfull");
+            //alert("login Successfull");
             window.location.href = "/home&all/homePage.html";
         });
   } else {
