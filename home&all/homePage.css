@@ -1,6 +1,8 @@
 :root {
-  --color-primary: #3a98b9;
-  --color-gray: hsl(0, 0%, 89%);
+  --color-primary: #2e7b97;
+  --color-gray: hsl(0, 0%, 90%);
+  --bg-light: #a1cdce;
+  --shadow-gray: #b9b9b9;
   --radius-rounded-pill: 50rem;
 }
 *,
@@ -141,7 +143,6 @@ body {
   color: white;
   text-decoration: none;
   text-align: center;
-  color: #ffffff;
   text-shadow: 3px 2px 3px rgb(0, 0, 0), 0 0 1em rgb(59, 74, 77),
     0 0 0.2em rgb(29, 82, 92);
 }

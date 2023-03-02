@@ -14,3 +14,16 @@
 body {
   background: var(--color-gray);
 }
+
+.product_subject{
+  color: var(--color-primary);
+  text-shadow: 1px 1px 1px rgb(34, 77, 85);
+  text-decoration: underline;
+}
+
+/* 
+ --color-primary 
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 3px 2px 3px rgb(0, 0, 0), 0 0 1em rgb(59, 74, 77),
+    0 0 0.2em rgb(29, 82, 92);*/

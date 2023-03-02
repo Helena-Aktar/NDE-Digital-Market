@@ -7,7 +7,7 @@
 function search() {
   const search_value = document.querySelector("#search_product").value;
   localStorage.setItem("searchkey", search_value);
-  window.location.href = "http://127.0.0.1:5500/home&all/productsPage.html";
+  window.location.href = "/home&all/productsPage.html";
   document.querySelector("#search_product").value = "";
 }
 // product details
