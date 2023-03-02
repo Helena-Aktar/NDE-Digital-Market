@@ -150,7 +150,7 @@
                 <!-- label -->
                 <div class="label_col col d-flex mt-2">
                   <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
-                  <h6>Email Address:</h6>
+                  <h6>User Name:</h6>
                 </div>
                 <!-- inputs -->
                 <div class="input_col col">
@@ -159,8 +159,8 @@
                     type="text"
                     id="email"
                     name="email"
-                    placeholder="Please enter your email"
-                    onchange="value()";
+                    placeholder="Please enter your name"
+                    required
                   />
                 </div>
               </div>
@@ -180,7 +180,7 @@
                     id="login_password"
                     name="login_password"
                     placeholder="Enter your password"
-                    onblur="value()";
+                    required
                   />
                 </div>
               </div>
@@ -195,7 +195,7 @@
                 style="position: absolute; height: 40px; width: 150px;"
                 class="rounded-3 p-2 fs-6"
                 id="register_button"
-                type="submit"
+                type="button"
               >
                 Sign in
               </button>
