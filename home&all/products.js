@@ -2,7 +2,9 @@
 const products = document.querySelector(".products");
 const product = products.querySelectorAll(".product");
 const productsearchBar = document.querySelector("#search_product");
-
+// console.log(products);
+// console.log(product);
+// console.log(productsearchBar);
 // =================== Products search ==================
 // my way
 //searches products
@@ -10,9 +12,10 @@ const searchProduct = () => {
   const val = productsearchBar.value.toLowerCase();
   console.log(val);
   product.forEach((item) => {
-    console.log(product);
+    console.log(products);
+    console.log(item);
     let title = item.querySelector("span").textContent.toLowerCase();
-    console.log(title);
+    // console.log(title);
     if (title.indexOf(val) != -1) {
       item.style.display = "flex";
     } else {
