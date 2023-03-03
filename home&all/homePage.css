@@ -654,6 +654,7 @@ body {
   left: 250px;
   top: 10px;
   z-index: 10;
+  background: #f2ffff !important;
   box-shadow: 0 0 16px var(--color-primary);
 }
 /* #top_navber_Categories_sub_hover::before {
@@ -672,5 +673,4 @@ body {
 }
 #top_sub_navber:hover #top_navber_Categories_sub_hover {
   display: block;
-  background: var(--bg-light);
 }
