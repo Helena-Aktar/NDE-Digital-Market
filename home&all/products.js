@@ -17,7 +17,7 @@ const searchProduct = () => {
     let title = item.querySelector("span").textContent.toLowerCase();
     // console.log(title);
     if (title.indexOf(val) != -1) {
-      item.style.display = "flex";
+      item.style.display = "block";
     } else {
       item.style.display = "none";
     }

@@ -672,4 +672,5 @@ body {
 }
 #top_sub_navber:hover #top_navber_Categories_sub_hover {
   display: block;
+  background: var(--bg-light);
 }
