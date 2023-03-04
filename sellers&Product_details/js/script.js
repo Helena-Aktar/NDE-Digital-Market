@@ -20,10 +20,11 @@ function showAllCategories() {
 }
 
 function loginasSeller() {
-  const popup = document.querySelector(".customize-theme");
+  const popup = document.querySelector(".Login_as_seller-outbox");
   const stickytop = document.getElementById("button-card-section");
   const pass = document.getElementById("login_password").value;
-  if (pass == 12345) {
+  const mail = document.getElementById("email").value;
+  if (pass == 12345 && mail == "tushar") {
     popup.style.display = "none";
     stickytop.style.display = "block";
   } else alert("Wrong password");

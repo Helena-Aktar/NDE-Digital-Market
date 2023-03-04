@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="Dashboard.css" />
+    <title>Seller Dashboard</title>
+  </head>
+  <body>
+    <!-- <h1 class="text-center mt-5">
+      Welcome <span class="text-primary" id="Name"></span> For Become Our Seller
+    </h1> -->
+    <div
+      class="sel-dash d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="img-div">
+        <img
+          src="/home&all/images/Dashboard.jpg"
+          class="img-fluid"
+          alt=""
+          style="height: 500px; width: 100%"
+        />
+        <div class="name-div">
+          <h2 class="name-pos">
+            Welcome <span class="text-primary" id="Name"> Mostafiz</span>
+          </h2>
+        </div>
+
+        <h3 class="greet">
+          <span class="congo"> Congratulation! </span> this is your hub for
+          managing your products and sales on our platform.
+        </h3>
+      </div>
+    </div>
+    <!-- <img src="/Seller-Register-img/check-circle.svg" alt=""> -->
+  </body>
+  <script src="/Bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    let Name = document.getElementById("Name");
+    let uName = localStorage.getItem("uname");
+    console.log(uName);
+    if (uName.length > 0) {
+      Name.innerHTML = uName;
+    }
+    localStorage.clear();
+  </script>
+</html>

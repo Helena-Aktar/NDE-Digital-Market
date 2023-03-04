@@ -1,0 +1,217 @@
+* {
+  border: none;
+}
+.sel-reg-logo {
+  height: 10px;
+  width: 20px;
+}
+.bridge {
+  background: rgb(193, 199, 208);
+
+  height: 2px;
+  width: 30px;
+  margin-top: 15px;
+}
+.logo-img {
+  height: 60px;
+  width: 180px;
+}
+#first-check {
+  font-weight: 600;
+}
+.check-icon {
+  font-size: 23px;
+}
+.email-pass-dashboard {
+  margin-top: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #3a98b9;
+  padding: 6px;
+}
+
+input {
+  flex-grow: 2;
+
+  border: none;
+}
+#fpage {
+  color: #0a8bba;
+}
+#spage {
+  color: #3a98b9;
+}
+
+input:focus {
+  outline: none;
+}
+
+form:focus-within {
+  outline: 1px solid #3a98b9;
+}
+
+.button-otp {
+  border: 1px solid rgb(182 209 235);
+  border-radius: 10px;
+  background: rgb(233 242 251);
+  margin-right: 5px;
+  color: rgb(125 183 241);
+}
+.catagory-btn {
+  border: 1px solid #3a98b9;
+  border-radius: 10px;
+  background: rgb(233 242 251);
+  font-weight: 400;
+  font-size: 20px;
+  color: #3a98b9;
+}
+.icon-box {
+  font-size: 23px;
+  /* for increase icon weight  */
+  -webkit-text-stroke: 1px;
+}
+.book {
+  border: 1px solid gray;
+  width: 185px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 18px;
+  color: gray;
+  padding-top: 21px;
+  padding-bottom: 6px;
+}
+.book-icon {
+  margin-top: 9px;
+  -webkit-text-stroke: 1px;
+}
+.book-pan {
+  margin-bottom: 2px;
+}
+.book-pan p {
+  margin-bottom: 0;
+}
+
+.book-para {
+  font-size: 13px;
+  margin-bottom: 0;
+  padding-top: 0px;
+}
+.gstin-para {
+  width: 60%;
+  font-weight: 600;
+}
+.terms-para {
+  margin: 0px 0px 16px;
+  line-height: 16px;
+  color: rgb(96, 112, 128);
+}
+.terms-privacy {
+  color: #3a98b9;
+}
+.register-continue {
+  border: none;
+  transition: opacity 200ms ease 0s;
+  padding: 12px 20px;
+  height: auto;
+  border-radius: 4px;
+  font-weight: 600;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgb(0, 102, 204);
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-size: 18px;
+}
+.register-continue a {
+  text-decoration: none;
+  color: white;
+}
+.arrow-icon {
+  -webkit-text-stroke: 1px;
+  margin-top: 2px;
+}
+.seller-raju {
+  display: flex;
+  flex-direction: row;
+  width: 382px;
+  border: 1px solid rgb(193, 199, 208);
+  border-radius: 18px;
+  padding: 15px;
+}
+.raju-head-footer {
+  padding-left: 25px;
+}
+
+.raju-head {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 10px;
+  color: #504949;
+}
+.raju-footer {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: gray;
+}
+.why-sell-section {
+  background-color: rgb(235, 243, 251);
+  padding-top: 10px;
+}
+.why-sell-header {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+.why-sell-para {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(96, 112, 128);
+}
+
+/* dashboard design  */
+.sel-dash {
+  height: 600px;
+
+  /* border: 5px solid red; */
+}
+
+.img-div {
+  position: relative;
+}
+.name-div {
+  position: absolute;
+  top: 32%;
+  right: 8%;
+  width: 279px;
+}
+
+.greet {
+  position: absolute;
+  top: 29%;
+  width: 24%;
+  font-size: 19px;
+  left: 3%;
+}
+.congo {
+  color: var(--color-primary);
+  font-size: 28px;
+}
