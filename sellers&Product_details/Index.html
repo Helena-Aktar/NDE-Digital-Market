@@ -18,8 +18,15 @@
     <link rel="stylesheet" href="copy_bootstrap/bootstrap_copy.css" />
     <!-- css -->
     <link rel="stylesheet" href="/home&all/homePage.css" />
+    <link rel="stylesheet" href="/home&all/registrationPage.css" />
   </head>
   <body>
+    <!-- <div
+      class="login popup bg-danger"
+      style="z-index: 100000; height: 100%; width: 100%"
+    >
+      fdsa
+    </div> -->
     <!-- <div id="container"> -->
     <!-- ========== navBAr ============= -->
     <div class="navBar">
@@ -28,7 +35,7 @@
         <!-- style="position: fixed; width: 100%; z-index: 200;" -->
         <!-- ---------- nav top left ------------ -->
         <div class="nav_top-left" style="width: 350px">
-          <a class="logo text-center ps-3" href="./homePage.html">
+          <a class="logo text-center ps-3" href="/home&all/homePage.html">
             <!-- <h6 style="width: 200px">NDE Digital Market</h6> -->
             <img
               style="height: 55px; width: 200px"
@@ -540,6 +547,7 @@
       </button>
     </div>
     <!-- ========== navBAr End ============= -->
+
     <section id="body_section">
       <div id="body" class="mt-3">
         <section id=" image-and-card-section">
@@ -1661,6 +1669,88 @@
       <!-- ========== footer End ============= -->
     </div>
     <!-- </div> -->
+
+    <!-- ======================== Theme Customization =================== -->
+
+    <div class="customize-theme">
+      <div class="theme-card">
+        <h2>Login as seller</h2>
+        <!-- <p>Manage your font size, color and, background.</p> -->
+        <!-- ================ Login ============ -->
+        <div
+          class="rounded-3 ps-2 bg-white mt-3 d-flex justify-content-center"
+          style="height: 300px; width: fit-content"
+        >
+          <form class="p-2" action="">
+            <div class="row" style="margin-top: 50px">
+              <!-- Email Address  -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex mt-2">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>User Name:</h6>
+                </div>
+                <!-- inputs -->
+                <div class="input_col col">
+                  <input
+                    class="border text text-muted"
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Please enter your name"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- end of Email Address  -->
+              <!-- Login Password  -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex mt-2">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>Password:</h6>
+                </div>
+                <!-- inputs -->
+                <div class="input_col col">
+                  <input
+                    class="border text-muted"
+                    type="text"
+                    id="login_password"
+                    name="login_password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- end of Login Password  -->
+            </div>
+            <div class="d-flex justify-content-center text-muted">
+              <input type="checkbox" />
+              <p class="mt-1 m-1">Keep me Logged in</p>
+            </div>
+            <div class="d-flex justify-content-center mt-2 m-2">
+              <button
+                style="position: absolute; height: 40px; width: 150px"
+                class="rounded-3 p-2 fs-6"
+                id="register_button"
+                type="button"
+                onclick="loginasSeller()"
+              >
+                Sign in
+              </button>
+            </div>
+          </form>
+          <span
+            class="d-flex justify-content-center"
+            style="position: absolute; top: 600px"
+          >
+            New Here? <a href="./registrationPage.html"> click to join</a>
+          </span>
+        </div>
+        <!-- ================ login end ============ -->
+      </div>
+    </div>
+    <!-- ------------------ End of theme ---------- -->
     <script src="./bootstrap/js/bootstrap.bundle.js"></script>
     <script src="js/script.js"></script>
   </body>

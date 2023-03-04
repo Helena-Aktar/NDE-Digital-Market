@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="copy_bootstrap/bootstrap_copy.css" />
     <!-- css -->
     <link rel="stylesheet" href="/home&all/homePage.css" />
+    <link rel="stylesheet" href="/home&all/registrationPage.css" />
   </head>
   <body>
     <!-- <div
@@ -1668,6 +1669,132 @@
       <!-- ========== footer End ============= -->
     </div>
     <!-- </div> -->
+
+    <!-- ======================== Theme Customization =================== -->
+
+    <div class="customize-theme">
+      <div class="theme-card">
+        <h2>Login as seller</h2>
+        <!-- <p>Manage your font size, color and, background.</p> -->
+        <!-- ================ Login ============ -->
+        <div
+          class="rounded-3 ps-2 bg-white mt-3 d-flex justify-content-center"
+          style="height: 300px; width: fit-content"
+        >
+          <form class="p-2" action="">
+            <div class="row" style="margin-top: 50px">
+              <!-- Email Address  -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex mt-2">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>User Name:</h6>
+                </div>
+                <!-- inputs -->
+                <div class="input_col col">
+                  <input
+                    class="border text text-muted"
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Please enter your name"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- end of Email Address  -->
+              <!-- Login Password  -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex mt-2">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>Password:</h6>
+                </div>
+                <!-- inputs -->
+                <div class="input_col col">
+                  <input
+                    class="border text-muted"
+                    type="text"
+                    id="login_password"
+                    name="login_password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- end of Login Password  -->
+            </div>
+            <div class="d-flex justify-content-center text-muted">
+              <input type="checkbox" />
+              <p class="mt-1 m-1">Keep me Logged in</p>
+            </div>
+            <div class="d-flex justify-content-center mt-2 m-2">
+              <button
+                style="position: absolute; height: 40px; width: 150px"
+                class="rounded-3 p-2 fs-6"
+                id="register_button"
+                type="button" onclick="loginasSeller()"
+              >
+                Sign in
+              </button>
+            </div>
+          </form>
+          <span
+            class="d-flex justify-content-center"
+            style="position: absolute; top: 600px"
+          >
+            New Here? <a href="./registrationPage.html"> click to join</a>
+          </span>
+        </div>
+        <!-- ================ login end ============ -->
+        <!-- ----Font Size ------ -->
+        <!-- <div class="font-size">
+          <h4>Font Size</h4>
+          <div>
+            <h6>Aa</h6>
+            <div class="choose-size">
+              <span class="font-size-1"></span>
+              <span class="font-size-2"></span>
+              <span class="font-size-3 active"></span>
+              <span class="font-size-4"></span>
+              <span class="font-size-5"></span>
+            </div>
+            <h3>Aa</h3>
+          </div>
+        </div> -->
+        <!-- -------- Primary Colors -------------- -->
+        <!-- <div class="color">
+          <h4>Color</h4>
+          <div class="choose-color">
+            <span class="color-1 active"></span>
+            <span class="color-2"></span>
+            <span class="color-3"></span>
+            <span class="color-4"></span>
+            <span class="color-5"></span>
+          </div>
+        </div> -->
+        <!-- -------- Background Colors ---------- -->
+        <!-- <div class="background">
+          <h4>Background</h4>
+          <div class="choose-bg">
+            <div class="bg-1 active">
+              <span></span>
+              <h5 for="bg-1">Light</h5>
+            </div>
+            <div class="bg-2">
+              <span></span>
+              <h5 for="bg-2">Dim</h5>
+            </div>
+            <div class="bg-3">
+              <span></span>
+              <h5 for="bg-3">Lights Out</h5>
+            </div>
+          </div>
+        </div> -->
+        <!--  -->
+      </div>
+    </div>
+    <!-- ------------------ End of theme ---------- -->
     <script src="./bootstrap/js/bootstrap.bundle.js"></script>
     <script src="js/script.js"></script>
   </body>
