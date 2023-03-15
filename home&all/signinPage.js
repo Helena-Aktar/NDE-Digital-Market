@@ -18,7 +18,7 @@ button.addEventListener("click", function () {
   const inputField1 = document.querySelector("#login_password").value;
   const inputField2 = document.querySelector("#email").value;
   console.log(inputField1, inputField2);
-  if (inputField2 == "tushar" && inputField1 == "12345") {
+  if (inputField2 == "Admin" && inputField1 == "12345") {
     // alert("login Successfull");
     window.location.href = "/home&all/homePage.html";
   } else {

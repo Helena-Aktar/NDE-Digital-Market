@@ -24,7 +24,7 @@ function loginasSeller() {
   const stickytop = document.getElementById("button-card-section");
   const pass = document.getElementById("login_password").value;
   const mail = document.getElementById("email").value;
-  if (pass == 12345 && mail == "tushar") {
+  if (pass == 12345 && mail == "NDE") {
     popup.style.display = "none";
     stickytop.style.display = "block";
   } else alert("Wrong password");

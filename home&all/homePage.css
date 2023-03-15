@@ -471,6 +471,7 @@ body {
   box-shadow: 0 0 1rem var(--color-primary);
   /* popup hidden */
   display: none;
+  top: 250px;
 }
 
 .product_details-popup::before {
