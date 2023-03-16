@@ -89,7 +89,7 @@ body {
 .profile-popup::before {
   content: "";
   position: absolute;
-  top: 1rem;
+  top: 0;
   height: 20px;
   width: 20px;
   display: block;
@@ -471,7 +471,7 @@ body {
   box-shadow: 0 0 1rem var(--color-primary);
   /* popup hidden */
   display: none;
-  top: 250px;
+  /* top: 250px; */
 }
 
 .product_details-popup::before {

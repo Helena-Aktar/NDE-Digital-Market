@@ -488,11 +488,11 @@
       <div class="main_body ms-5 me-5 p-3 d-flex justify-content-center">
         <!-- ================ JUst For You ============ -->
         <div
-          class="rounded-3 ps-2 bg- mt-3 d-flex justify-content-between bg-white"
+          class="rounded-3 ps-2 bg-white mt-3 d-flex justify-content-center"
           style="height: 300px; width: fit-content"
         >
-          <div class="p-2" action="">
-            <div class="" style="margin-top: 50px">
+          <form class="p-2" action="">
+            <div class="row" style="margin-top: 50px">
               <!-- Email Address  -->
               <div class="form_item d-flex">
                 <!-- label -->
@@ -538,17 +538,9 @@
               <input type="checkbox" />
               <p class="mt-1 m-1">Keep me Logged in</p>
             </div>
-            <div class="d-flex justify-content-center mt-2 m-2"></div>
-          </div>
-          <div class="otherLoginWays m-3">
-            <div class="m-3">
+            <div class="d-flex justify-content-center mt-2 m-2">
               <button
-                style="
-                  position: relative;
-                  height: 40px;
-                  width: 150px;
-                  background: var(--color-primary);
-                "
+                style="position: absolute; height: 40px; width: 150px"
                 class="rounded-3 p-2 fs-6"
                 id="register_button"
                 type="button"
@@ -556,45 +548,14 @@
                 Sign in
               </button>
             </div>
-            <div class="text-muted ms-5">Or, login with</div>
-            <div class="m-3">
-              <button
-                style="
-                  position: relative;
-                  height: 40px;
-                  width: 150px;
-                  background: rgb(71, 128, 227);
-                "
-                class="rounded-3 p-2 fs-6"
-                id="register_button"
-                type="button"
-              >
-              <i class="fa-brands fa-square-facebook me-1"></i> Facebook
-              </button>
-            </div>
-            <div class="m-3">
-              <button
-                style="
-                  position: relative;
-                  height: 40px;
-                  width: 150px;
-                  background: red;
-                "
-                class="rounded-3 p-2 fs-6"
-                id="register_button"
-                type="button"
-              ><i class="fa-brands fa-google me-1"></i>
-                Google
-              </button>
-            </div>
-          </div>
+          </form>
+          <span
+            class="d-flex justify-content-center"
+            style="position: absolute; top: 500px"
+          >
+            New Here? <a href="./registrationPage.html"> click to join</a>
+          </span>
         </div>
-        <span
-          class="d-flex justify-content-center"
-          style="position: absolute; top: 500px"
-        >
-          New Here? <a href="./registrationPage.html"> click to join</a>
-        </span>
         <!-- ================ registration end ============ -->
       </div>
 

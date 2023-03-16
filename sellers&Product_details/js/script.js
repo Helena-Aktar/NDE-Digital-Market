@@ -18,7 +18,6 @@ function showAllCategories() {
     a.style.display = "none";
   }
 }
-
 function loginasSeller() {
   const popup = document.querySelector(".Login_as_seller-outbox");
   const stickytop = document.getElementById("button-card-section");

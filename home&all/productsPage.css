@@ -35,6 +35,15 @@ body {
 .searched_products {
   display: none;
 }
+.product_details-popup {
+  position: absolute;
+  z-index: 8;
+  /* left: 40px; */
+  box-shadow: 0 0 1rem var(--color-primary);
+  /* popup hidden */
+  display: none;
+  top: 250px;
+}
 /* 
  --color-primary 
   text-decoration: none;
