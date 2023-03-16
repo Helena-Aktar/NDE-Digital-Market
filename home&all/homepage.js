@@ -10,6 +10,13 @@ function search() {
   window.location.href = "/home&all/productsPage.html";
   document.querySelector("#search_product").value = "";
 }
+// track order
+function track() {
+  const track_value = document.querySelector("#order_num").value;
+  localStorage.setItem("order_key", track_value);
+  window.location.href = "/home&all/trackOrder.html";
+  document.querySelector("#order_num").value = "";
+}
 // product details
 // const menuItems = document.querySelectorAll(".product");
 // // remove active class from menu items

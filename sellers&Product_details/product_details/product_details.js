@@ -7,7 +7,7 @@ function show(imgID) {
   var b = document.createElement("div");
   b.innerHTML = `
     <img style="width: 350px; height: 330px; margin: 10px; position:relative; align-item:right;" 
-    src="/Medical Equipment Image/Bone & Bone Marrow Biopsy/Bone Marrow Aspiration Needle/Stainless Steel Bone Marrow Aspiration Biopsy puncture Needle(${imgID}).png" alt="">
+    src="/Medical-Equipment-Image/Bone-&-Bone-Marrow-Biopsy/Bone-Marrow-Aspiration-Needle/Stainless-Steel-Bone-Marrow-Aspiration-Biopsy-puncture-Needle-${imgID}.png" alt="">
     `;
   a.appendChild(b);
   // console.log(a);
@@ -106,3 +106,9 @@ onmouseout = (event) => {
 // })
 
 // // zoom End
+function track() {
+  const track_value = document.querySelector("#order_num").value;
+  localStorage.setItem("order_key", track_value);
+  window.location.href = "/home&all/trackOrder.html";
+  document.querySelector("#order_num").value = "";
+}

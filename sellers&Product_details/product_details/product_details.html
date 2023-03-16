@@ -37,7 +37,7 @@
               <!-- style="position: fixed; width: 100%; z-index: 200;" -->
               <!-- ---------- nav top left ------------ -->
               <div class="nav_top-left" style="width: 350px">
-                <a class="logo text-center ps-3" href="./homePage.html">
+                <a class="logo text-center ps-3" href="/home&all/homePage.html">
                   <!-- <h6 style="width: 200px">NDE Digital Market</h6> -->
                   <img
                     style="height: 55px; width: 200px"
@@ -242,7 +242,7 @@
                       <div class="m-2 p-2">
                         <div class="d-grid gap-2">
                           <a
-                            href="/home&all/signinPage.html"
+                            href="./signinPage.html"
                             class="btn rounded p-1 fw-bold text-white"
                             style="
                               border: 1px solid var(--color-primary);
@@ -252,7 +252,7 @@
                             Sign in
                           </a>
                           <a
-                            href="/home&all/registrationPage.html"
+                            href="./registrationPage.html"
                             class="btn rounded p-1 fw-bold btn-outline"
                             style="border: 1px solid gray"
                           >
@@ -288,8 +288,11 @@
                             >Sign in</a
                           >
                           <p>
-                            New user? Please <a href="#">register</a> and start
-                            your business!
+                            New user? Please
+                            <a href="/home&all/registrationPage.html"
+                              >register</a
+                            >
+                            and start your business!
                           </p>
                         </div>
                       </div>
@@ -298,7 +301,7 @@
                   </div>
                   <!-- ---- trade_assurance --- -->
                   <div class="trade_assurance nav-icon">
-                    <i class="fa-solid fa-clipboard-list"></i>
+                    <i class="fa-solid fa-truck-arrow-right"></i>
                     <i class="nav-icon-arrow fa-solid fa-angle-down"></i>
                     <!-- trade_assurance popup -->
                     <div
@@ -308,25 +311,23 @@
                     >
                       <div class="m-2 p-2">
                         <div class="d-grid gap-2">
-                          <h5>
-                            <img
-                              class="me-2"
-                              src="/home&all/images/trade assurance.png"
-                              style="height: 40px"
-                            />Trade Assurance
-                          </h5>
-                          <small>Learn more</small>
-                          <p>portects your NDE.com order</p>
-                          <span class="fw-bold">Trade Assurance ensures:</span>
-                          <ul class="text-start">
-                            <li>Product quality</li>
-                            <li>On-timew shipment</li>
-                          </ul>
+                          <small>Enter your order number</small>
+                          <input
+                            id="order_num"
+                            class="rounded-2"
+                            type="text"
+                            style="
+                              width: 100%;
+                              border: 1px solid var(--color-primary);
+                            "
+                          />
+
                           <a
                             class="btn text-white w-100"
                             style="background: var(--color-primary)"
                             href="#"
-                            >Order with Trade Assurance</a
+                            onclick="track()"
+                            >Track My Order</a
                           >
                         </div>
                       </div>
@@ -1202,7 +1203,7 @@
                     প্রডাক্ট প্যাকেজিং এর আগে চেক করে দিলে আরো ভাল হবে। দাম
                     হিসেবে প্রডাক্ট এর রেটিং করলে আমার মতে ৮/১০।
                   </p>
-                  <div class="d-flex">
+                  <div class="d-flex images" style="cursor: pointer">
                     <img
                       id="r1"
                       onclick="show(0)"

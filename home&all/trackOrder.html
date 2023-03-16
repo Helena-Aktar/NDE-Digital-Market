@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign in Page</title>
+    <title>Track Order Page</title>
     <!-- ===== Iconsout CDN ======= -->
     <link
       rel="stylesheet"
@@ -24,7 +24,7 @@
     /> -->
     <link rel="stylesheet" href="/home&all/bootstrap-copy.css" />
     <link rel="stylesheet" href="/home&all/homePage.css" />
-    <link rel="stylesheet" href="/home&all/registrationPage.css" />
+    <link rel="stylesheet" href="/home&all/trackOrder.css" />
   </head>
 
   <body>
@@ -287,7 +287,7 @@
               </div>
               <!-- ---- trade_assurance --- -->
               <div class="trade_assurance nav-icon">
-                <i class="fa-solid fa-clipboard-list"></i>
+                <i class="fa-solid fa-truck-arrow-right"></i>
                 <i class="nav-icon-arrow fa-solid fa-angle-down"></i>
                 <!-- trade_assurance popup -->
                 <div
@@ -297,25 +297,23 @@
                 >
                   <div class="m-2 p-2">
                     <div class="d-grid gap-2">
-                      <h5>
-                        <img
-                          class="me-2"
-                          src="/home&all/images/trade assurance.png"
-                          style="height: 40px"
-                        />Trade Assurance
-                      </h5>
-                      <small>Learn more</small>
-                      <p>portects your NDE.com order</p>
-                      <span class="fw-bold">Trade Assurance ensures:</span>
-                      <ul class="text-start">
-                        <li>Product quality</li>
-                        <li>On-timew shipment</li>
-                      </ul>
+                      <small>Enter your order number</small>
+                      <input
+                        id="order_num"
+                        class="rounded-2"
+                        type="text"
+                        style="
+                          width: 100%;
+                          border: 1px solid var(--color-primary);
+                        "
+                      />
+
                       <a
                         class="btn text-white w-100"
                         style="background: var(--color-primary)"
                         href="#"
-                        >Order with Trade Assurance</a
+                        onclick="track()"
+                        >Track My Order</a
                       >
                     </div>
                   </div>
@@ -486,77 +484,161 @@
       <!-- ========== navBAr End ============= -->
       <!-- ========== main body ============= -->
       <div class="main_body ms-5 me-5 p-3 d-flex justify-content-center">
-        <!-- ================ JUst For You ============ -->
+        <!-- ================  ============ -->
         <div
-          class="rounded-3 ps-2 bg-white mt-3 d-flex justify-content-center"
-          style="height: 300px; width: fit-content"
+          class="rounded-3 ps-2 bg- mt-3 p-3 w-75"
+          style="background: rgb(193, 193, 193)"
         >
-          <form class="p-2" action="">
-            <div class="row" style="margin-top: 50px">
-              <!-- Email Address  -->
-              <div class="form_item d-flex">
-                <!-- label -->
-                <div class="label_col col d-flex mt-2">
-                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
-                  <h6>User Name:</h6>
-                </div>
-                <!-- inputs -->
-                <div class="input_col col">
-                  <input
-                    class="border text text-muted"
-                    type="text"
-                    id="email"
-                    name="email"
-                    placeholder="Please enter your name"
-                    required
-                  />
-                </div>
-              </div>
-              <!-- end of Email Address  -->
-              <!-- Login Password  -->
-              <div class="form_item d-flex">
-                <!-- label -->
-                <div class="label_col col d-flex mt-2">
-                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
-                  <h6>Password:</h6>
-                </div>
-                <!-- inputs -->
-                <div class="input_col col">
-                  <input
-                    class="border text-muted"
-                    type="password"
-                    id="login_password"
-                    name="login_password"
-                    placeholder="Enter your password"
-                    required
-                  />
-                </div>
-              </div>
-              <!-- end of Login Password  -->
-            </div>
-            <div class="d-flex justify-content-center text-muted">
-              <input type="checkbox" />
-              <p class="mt-1 m-1">Keep me Logged in</p>
-            </div>
-            <div class="d-flex justify-content-center mt-2 m-2">
-              <button
-                style="position: absolute; height: 40px; width: 150px"
-                class="rounded-3 p-2 fs-6"
-                id="register_button"
-                type="button"
-              >
-                Sign in
-              </button>
-            </div>
-          </form>
-          <span
-            class="d-flex justify-content-center"
-            style="position: absolute; top: 500px"
+          <div>
+            <h4 class="product_subject bg-white p-1 rounded-2 mt-2 mb-2">
+              Order Details
+            </h4>
+          </div>
+          <!--  -->
+          <div
+            class="order_info bg-white d-flex justify-content-between p-1 rounded-2"
           >
-            New Here? <a href="./registrationPage.html"> click to join</a>
-          </span>
+            <div class="">
+              <h6>Order #<span id="order_number">634598223619724</span></h6>
+              <h6 class="text-muted">Placed on 13 Nov 2022 20:09:43</h6>
+            </div>
+            <div class="">
+              <h6><span class="text-muted">Total:</span> ৳ 300</h6>
+            </div>
+          </div>
+          <!--  -->
+          <!-- DETAILS -->
+          <div class="bg-white rounded-2 p-2 mt-3">
+            <div
+              class="order_info bg-white d-flex justify-content-between rounded-2"
+            >
+              <div class="">
+                <h6 lass="text-muted">
+                  <i class="fa-solid fa-gift me-1 text-muted"></i>Package 1
+                </h6>
+                <h6 class="text-muted">
+                  Sold by
+                  <span style="color: rgb(78, 126, 198)">LouisWill</span>
+                </h6>
+              </div>
+              <div class="">
+                <h6 style="color: rgb(78, 126, 198)">
+                  <span class="text-muted"
+                    ><i class="fa-solid fa-comments"></i
+                  ></span>
+                  Chat Now
+                </h6>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="bg-white mt-2 mb-3 p-1 rounded-2">
+              <!-- ======================== Theme Customization =================== -->
+
+              <div class="customize-theme bg-white mt-2 mb-3 p-1 rounded-2">
+                <div class="theme-card">
+                  <!-- ----Font Size ------ -->
+                  <div class="font-sizee mt-1">
+                    <div class="p-3 d-flex justify-content-center">
+                      <div
+                        class="choose-sizee w-75"
+                        style="background: rgb(54, 154, 104)"
+                      >
+                        <span class="font-size-1"></span>
+                        <span class=""></span>
+                        <span class=" "></span>
+
+                        <span class="font-size-4 active"></span>
+                      </div>
+                    </div>
+                    <div class="me-3">
+                      <h6
+                        class="d-flex"
+                        style="position: relative; left: 130px; width: 85%"
+                      >
+                        <span> Payment Pending</span
+                        ><span class="" style="margin-left: 190px"
+                          >Processing</span
+                        ><span style="margin-left: 250px">Shipped</span
+                        ><span class="" style="margin-left: 240px"
+                          >Delivered</span
+                        >
+                      </h6>
+                    </div>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <!-- ------------------ End of theme ---------- -->
+              <div
+                class="delivery mb-5 p-1 rounded-2 text-center"
+                style="
+                  background: rgb(223, 233, 253);
+                  position: relative;
+                  left: 130px;
+                  width: 80%;
+                "
+              >
+                <span class="text-muted">25 Nov 2022 - 20:15</span>
+                <span class="text-muted"
+                  >Your package has been delivered. Thank you for shopping at
+                  NDE Digital Market!</span
+                >
+                <div class="text-center text-muted">
+                  <a href="#">VIEW MORE</a>
+                </div>
+              </div>
+              <div class="bg-white p-2 m-2">
+                <!-- dish block 4 -->
+                <div class="product_card">
+                  <div class="d-flex">
+                    <div class="product-block d-flex">
+                      <div class="product-img">
+                        <img
+                          class="rounded-3"
+                          style="height: 100px; width: 100px"
+                          src="/Medical-Equipment-Image/Expander/Skin Expander/Skin Expander(1).png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="ms-3 d-flex justify-content-between">
+                        <div class="">
+                          <h4>Skin Expander</h4>
+                          <p class="text-muted">No Warranty</p>
+                        </div>
+                        <div>
+                          <h6
+                            class="me-5"
+                            style="color: red; margin-left: 100px"
+                          >
+                            ৳ 300
+                          </h6>
+                        </div>
+                        <div>
+                          <h6>
+                            <span class="text-muted">Quantity: </span>
+                            <span>1</span>
+                          </h6>
+                        </div>
+                        <div class="ms-5">
+                          <span class="text-muted">RETURN/REFUND</span>
+                          <div style="color: rgb(57, 165, 219)">
+                            WRITE A REVIEW
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- add to cart -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- ================ registration end ============ -->
+        <!--  -->
+
+        <!--  -->
+        <!-- ================  ============ -->
       </div>
 
       <!-- ========== footer ============= -->
@@ -685,6 +767,7 @@
     <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
     <script src="/home&all/registrationPage.js"></script>
     <script src="signinPage.js"></script>
+    <script src="/home&all/trackOrder.js"></script>
     <!-- <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script> -->
   </body>
 </html>

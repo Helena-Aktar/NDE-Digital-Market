@@ -23,8 +23,14 @@ function loginasSeller() {
   const stickytop = document.getElementById("button-card-section");
   const pass = document.getElementById("login_password").value;
   const mail = document.getElementById("email").value;
-  if (pass == 12345 && mail == "NDE") {
+  if (pass == 12345 && mail == "Admin") {
     popup.style.display = "none";
     stickytop.style.display = "block";
   } else alert("Wrong password");
+}
+function track() {
+  const track_value = document.querySelector("#order_num").value;
+  localStorage.setItem("order_key", track_value);
+  window.location.href = "/home&all/trackOrder.html";
+  document.querySelector("#order_num").value = "";
 }

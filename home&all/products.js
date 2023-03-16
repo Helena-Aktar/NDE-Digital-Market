@@ -89,3 +89,9 @@ if (searchValue != "") {
   Allproducts.style.display = "flex";
   Searchedproducts.style.display = "none";
 }
+function track() {
+  const track_value = document.querySelector("#order_num").value;
+  localStorage.setItem("order_key", track_value);
+  window.location.href = "/home&all/trackOrder.html";
+  document.querySelector("#order_num").value = "";
+}
