@@ -62,6 +62,7 @@ productsearchBar.addEventListener("keyup", searchProduct);
 // // tushars way end
 
 //============== search from another page ==============
+
 const searchValue = localStorage.getItem("searchkey");
 // console.log(searchValue);
 if (searchValue != "") {
@@ -77,6 +78,9 @@ if (searchValue != "") {
       item.style.display = "block";
 
       // document.querySelectorAll("h4").display = "none";
+    } else if (searchValue == null) {
+      Allproducts.style.display = "flex";
+      Searchedproducts.style.display = "none";
     } else {
       item.style.display = "none";
       // products.querySelector(".innerText").style.display = "none";
